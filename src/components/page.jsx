@@ -110,7 +110,7 @@ export default function Page() {
 <div class="project-card">
 <div class="project-header">
 <h3> To-Do List</h3>
-<a href="https://apweatherapp.vercel.app/ "><i class="fas fa-external-link-alt"></i></a>
+<a href="https://ap-todo.vercel.app/ "><i class="fas fa-external-link-alt"></i></a>
 </div>
 <p>Wow is a Wake-on-LAN app that remotely powers on computers and provides features like status checks, shutdown, reboot, sleep, and lock.</p>
 <div class="project-icons">
@@ -124,7 +124,7 @@ export default function Page() {
 <div class="project-card">
 <div class="project-header">
 <h3>Football Livescore Site</h3>
-<a href="https://apweatherapp.vercel.app/ "><i class="fas fa-external-link-alt"></i></a>
+<a href="https://ap-sports.vercel.app "><i class="fas fa-external-link-alt"></i></a>
 </div>
 <p>Wow is a Wake-on-LAN app that remotely powers on computers and provides features like status checks, shutdown, reboot, sleep, and lock.</p>
 <div class="project-icons">

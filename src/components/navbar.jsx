@@ -10,7 +10,7 @@ export default function Navbar(){
 <>
 <div className="navbar">
     <a href="" className='logotext'>Precious! ⚡</a>
-    <a href="https://www.github.com/apreezofficial" className='git'><i class="fab fa-github"></i>github</a>
+    <a href="https://tiktok.com/@apcodesphere" className='git' target='_blank'><i class="fab fa-tiktok"></i> Tiktok</a>
 </div>
 </>
     );
