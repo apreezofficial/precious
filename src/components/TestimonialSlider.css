@@ -1,0 +1,65 @@
+.testimonial-container {
+      width: 100%;
+      max-width: 900px;
+          margin: auto;
+          height: 200px;
+            overflow: hidden;
+              position: relative;
+              }
+
+              .testimonial-wrapper {
+                display: flex;
+                  gap: 20px;
+                    scroll-behavior: smooth;
+                      cursor: grab;
+                        overflow-x: auto;
+                          scrollbar-width: none;
+                            -ms-overflow-style: none;
+                            }
+
+                            .testimonial-wrapper::-webkit-scrollbar {
+                              display: none;
+                              }
+
+                              .testimonial {
+                                min-width: 320px;
+                                  max-width: 320px;
+                                    background: linear-gradient(90deg, #0047ff, #1a73e8);
+                                      color: white;
+                                        padding: 20px;
+                                          border-radius: 15px;
+                                            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.4);
+                                            }
+
+                                            .testimonial h3 {
+                                              font-size: 16px;
+                                                font-weight: bold;
+                                                  margin-bottom: 10px;
+                                                  }
+
+                                                  .profile {
+                                                    display: flex;
+                                                      align-items: center;
+                                                        margin-top: 20px;
+                                                        }
+
+                                                        .profile img {
+                                                          width: 40px;
+                                                            height: 40px;
+                                                              border-radius: 50%;
+                                                                margin-right: 10px;
+                                                                }
+
+                                                                .profile div {
+                                                                  display: flex;
+                                                                    flex-direction: column;
+                                                                    }
+
+                                                                    .profile strong {
+                                                                      font-size: 14px;
+                                                                      }
+
+                                                                      .profile span {
+                                                                        font-size: 12px;
+                                                                          opacity: 0.8;
+                                                                          }

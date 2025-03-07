@@ -1,0 +1,144 @@
+:root { --background-color: #0D0D0D; --primary-text-color: #EAEAEA; --secondary-text-color: #A1A1A1; --primary-accent-color: #8A2BE2; --secondary-accent-color: #FF6B00; --icon-border-color: #6F42C1;  
+    --globe-primary: #00aaff; /* Light Blue */
+    --globe-secondary: #001f3f; /* Dark Blue */
+    --globe-border: #ffffff; /* White Border */
+    --globe-shadow: rgba(0, 0, 0, 0.5); /* Shadow */
+    --location-text: var(--primary-text-color); /* Using your existing text color */
+   }  
+body { background-color: var(--background-color); color: var(--primary-text-color); font-family: Arial, sans-serif; margin: 0; padding: 0; }  
+.navbar { position: fixed; top: 0; left: 0; width: 100%; height: 70px; display: flex; align-items: center; justify-content: space-between; background: rgba(0, 0, 0, 0.2); backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px); border-bottom: 1px solid rgba(255, 255, 255, 0.1); box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); transition: 0.3s ease-in-out; z-index: 1000; }  
+.navbar.scrolled { background: rgba(0, 0, 0, 0.6); box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.7); }  
+.logotext { font-size: 23px; Color: white; text-decoration: none; font-weight: 800; transform: scale(0.9); margin-left: 20px; }  
+.logotext:hover { transform: scale(0.7); }  
+.git { text-decoration: none; color: gray; font-size: 18px; margin-right: 20px; font-weight: 100; letter-spacing: 0.5px; font-family: Arial, sans-serif; }  
+.fa-github { font-size: 24px; }  
+body:has(.navbar) { scroll-behavior: smooth; }  
+body:has(.navbar) .navbar:before { content: ""; position: absolute; width: 100%; height: 100%; top: 0; left: 0; background: rgba(0, 0, 0, 0.6); z-index: -1; transition: background 0.3s ease-in-out; }  
+body:has(.navbar) .navbar:after { content: ""; position: absolute; width: 100%; height: 10px; bottom: -10px; left: 0; background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), transparent); }  
+.container { display: flex; align-items: center; justify-content: space-between; width: 80%; margin: auto; padding: 50px 0; background: var(--background-color); }  
+.content { max-width: 50%; }  
+h1 { font-size: 2.5rem; font-weight: bold; background: linear-gradient(to right, var(--primary-accent-color), var(--secondary-accent-color)); -webkit-background-clip: text; color: transparent; }  
+h1 span { font-weight: bold; }  
+p { font-size: 1rem; text-align: left; line-height: 1.5; margin: 10px 0; color: var(--primary-text-color); }  
+.social-icons { margin-top: 20px; display: flex; gap: 15px; }  
+.social-icons a { font-size: 30px; color: var(--primary-accent-color); border: 2px solid var(--icon-border-color); padding: 10px; border-radius: 50%; transition: transform 0.3s ease, color 0.3s ease, background 0.3s ease; }  
+.social-icons a:hover { transform: scale(1.1); color: var(--secondary-accent-color); background: var(--primary-accent-color); }  
+.profile-pic { position: relative; display: flex; align-items: center; justify-content: center; border: 3px solid var(--primary-accent-color); padding: 10px; border-radius: 10px; }  
+.profile-pic img { width: 250px; border-radius: 10px; }  
+@media screen and (max-width: 768px) { .container { flex-direction: column; text-align: center; width: 90%; } .content { max-width: 100%; } h1 { font-size: 2rem; background: linear-gradient(to right, var(--primary-accent-color), var(--secondary-accent-color)); -webkit-background-clip: text; color: transparent; } .social-icons { justify-content: center; } .social-icons a { font-size: 25px; padding: 8px; } .profile-pic { margin-top: 20px; } .profile-pic img { width: 200px; } }  
+.services { text-align: center; color: #EAEAEA; padding: 40px 20px; }  
+.services h2 { font-size: 2rem; font-weight: bold; }  
+.underline { width: 50px; height: 4px; background: linear-gradient(90deg, #8A2BE2, #FF6B00); margin: 10px auto 20px; }  
+.services p { color: #A1A1A1; font-size: 1rem; }  
+.services-container { display: grid; gap: 20px; margin-top: 30px; }  
+.service-card { background: #151515; padding: 20px; border-radius: 10px; text-align: left; position: relative; border: 1px solid #6F42C1; transition: transform 0.3s ease-in-out; overflow: hidden; }  
+.service-card:hover { transform: scale(1.05); }  
+.service-card i { font-size: 24px; color: #8A2BE2; margin-bottom: 10px; display: block; }  
+.service-card h3 { font-size: 1.2rem; color: #EAEAEA; margin-bottom: 10px; }  
+.service-card p { font-size: 0.9rem; color: #A1A1A1; }  
+.service-card::after { content: ''; position: absolute; top: 20px; right: 20px; width: 50px; height: 2px; background: linear-gradient(90deg, #8A2BE2, #FF6B00); }  
+@media (min-width: 768px) { .services-container { grid-template-columns: repeat(2, 1fr); } }  
+@media (min-width: 1024px) { .services-container { grid-template-columns: repeat(3, 1fr); } }  
+.projects { text-align: center; color: #EAEAEA; padding: 40px 20px; }  
+.projects h2 { font-size: 2rem; font-weight: bold; }  
+.projects-container { display: flex; justify-content: center; margin-top: 30px; }  
+.project-card { background: #151515; padding: 20px; margin:20px; text-align: left; position: relative; border: 1px solid #6F42C1; border-radius: 20px; width: 100%; max-width: 400px; transition: transform 0.3s ease-in-out; overflow: hidden; }  
+.project-card:hover { transform: scale(1.05); }  
+.project-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }  
+.project-header h3 { font-size: 1.2rem; color: #EAEAEA; }  
+.project-header i { font-size: 20px; color: #8A2BE2; }  
+.project-card p { font-size: 0.9rem; color: #A1A1A1; margin-bottom: 15px; }  
+.project-icons { display: flex; gap: 10px; }  
+.project-icons i { font-size: 20px; color: #FF6B00; }  
+@media (min-width: 768px) { .projects-container { justify-content: center; } }
+ .globe-container {
+      display: flex;  
+      flex-direction: column;
+          align-items: center;
+            justify-content: center;
+              text-align: center;
+ height  : fit-content;
+                  padding: 20px;
+                  }
+
+                  h1 {
+                    font-size: 2rem;
+                      font-weight: bold;
+                        margin-bottom: 20px;
+                        }
+
+                        .globe {
+                          width: 200px;
+                            height: 200px;
+                            animation: rotate 10s infinite;
+                              background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/World_map_blank_without_borders.svg/1024px-World_map_blank_without_borders.svg.png");
+                                background-size: cover;
+                                  background-position: center;
+                                    border-radius: 50%;
+                                      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+                                        transform-style: preserve-3d;
+                                          transition: transform 0.2s ease-out;
+                                          }
+
+                                          .location {
+                                            margin-top: 15px;
+                                              font-size: 1.2rem;
+                                              }
+
+                                              .icon {
+                                                font-size: 1.5rem;
+                                                  margin-right: 5px;
+                                                  }
+
+                                                  strong {
+                                                    font-weight: bold;
+                                                    }
+ @keyframes rotate{
+  from{
+    transform: rotate(0deg)
+  }
+to{
+  transform: rotate(360deg);
+}
+}
+ .banner-container {
+  display:flex;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 80px;
+  background: #000;
+  align-items: center;
+  }
+
+  .banner {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  white-space: nowrap;
+  padding: 20px 0;
+  width: 300%;
+  background: linear-gradient(90deg, #8A2BE2, #6F42C1);
+  color: white;
+  font-size: 24px;
+  font-weight: bold; 
+  animation: marquee 30s linear infinite;
+  word-spacing: 30px;
+  }
+  @keyframes marquee {
+  from {transform: translateX(0) skew(-10deg);}
+  to {transform: translateX(-100%) skew(-10deg);}
+  }
+
+  .banner span {
+  display: inline-block;
+  animation: glow 1.5s infinite alternate;
+  }
+
+  @keyframes glow {
+  from {text-shadow: 0 0 10px rgba(255,255,255,0.8);}
+  to {text-shadow: 0 0 20px rgba(255,255,255,1);}
+  }
+  
