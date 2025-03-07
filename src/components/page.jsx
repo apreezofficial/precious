@@ -137,52 +137,6 @@ export default function Page() {
 </div>
 
 </div>
-
-<div class="projects-container">
-<div class="project-card">
-<div class="project-header">
-<h3></h3>
-<a href="https://apweatherapp.vercel.app/ "><i class="fas fa-external-link-alt"></i></a>
-</div>
-<p>Wow is a Wake-on-LAN app that remotely powers on computers and provides features like status checks, shutdown, reboot, sleep, and lock.</p>
-<div class="project-icons">
-<i class="fab fa-aws"></i>
-<i class="fab fa-vuejs"></i>
-<i class="fas fa-wave-square"></i>
-<i class="fas fa-mountain"></i>
-<i class="fab fa-v"></i>
-</div>
-</div>
-<div class="project-card">
-<div class="project-header">
-<h3> To-Do List</h3>
-<a href="https://apweatherapp.vercel.app/ "><i class="fas fa-external-link-alt"></i></a>
-</div>
-<p>Wow is a Wake-on-LAN app that remotely powers on computers and provides features like status checks, shutdown, reboot, sleep, and lock.</p>
-<div class="project-icons">
-<i class="fab fa-aws"></i>
-<i class="fab fa-vuejs"></i>
-<i class="fas fa-wave-square"></i>
-<i class="fas fa-mountain"></i>
-<i class="fab fa-v"></i>
-</div>
-</div>
-<div class="project-card">
-<div class="project-header">
-<h3>Football Livescore Site</h3>
-<a href="https://apweatherapp.vercel.app/ "><i class="fas fa-external-link-alt"></i></a>
-</div>
-<p>Wow is a Wake-on-LAN app that remotely powers on computers and provides features like status checks, shutdown, reboot, sleep, and lock.</p>
-<div class="project-icons">
-<i class="fab fa-aws"></i>
-<i class="fab fa-vuejs"></i>
-<i class="fas fa-wave-square"></i>
-<i class="fas fa-mountain"></i>
-<i class="fab fa-v"></i>
-</div>
-</div>
-
-</div>
 </section>
 <TestimonialSlider />
 </>
