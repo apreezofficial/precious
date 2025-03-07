@@ -50,7 +50,19 @@ p { font-size: 1rem; text-align: left; line-height: 1.5; margin: 10px 0; color: 
 .project-card p { font-size: 0.9rem; color: #A1A1A1; margin-bottom: 15px; }  
 .project-icons { display: flex; gap: 10px; }  
 .project-icons i { font-size: 20px; color: #FF6B00; }  
-@media (min-width: 768px) { .projects-container { justify-content: center; } }
+@media (min-width: 768px)
+ { .projects-container { justify-content: center; }
+
+ }
+@media (max-width: 768px){
+  .projects-container{
+    display: block;
+    margin: 0;
+  }
+.project-card{
+  width: 80%;
+} }
+
  .globe-container {
       display: flex;  
       flex-direction: column;
