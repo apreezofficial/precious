@@ -1,1 +1,70 @@
-import React, { useEffect, useRef } from "react";import { motion } from "framer-motion";import "./TestimonialSlider.css";const testimonials=[{name:"Emma Thompson",role:"Senior Designer • PixelCraft",text:"Working with Aayush has been a fantastic experience. He's highly skilled and brings creativity...",img:"img1.jpg"},{name:"John Doe",role:"Lead Developer • TechGen",text:"Aayush is an expert at problem-solving, always delivering outstanding results...",img:"img2.jpg"},{name:"Sophia Lee",role:"CTO • InnovateHub",text:"He is an outstanding developer who excels in teamwork and collaboration...",img:"img3.jpg"},{name:"Mark Spencer",role:"Software Engineer • CodeWave",text:"His ability to spot and fix issues before they become problems is unmatched...",img:"img4.jpg"},{name:"Lily Evans",role:"Project Manager • DevForge",text:"His mentorship skills and clear communication make working with him effortless...",img:"img5.jpg"},{name:"Alex Carter",role:"UX Designer • BrightLabs",text:"He consistently delivers high-quality work that exceeds our expectations...",img:"img6.jpg"},{name:"Nathan Adams",role:"CEO • DigitalX",text:"His professionalism and technical expertise make him a valuable asset to any team...",img:"img7.jpg"}];const TestimonialSlider=()=>{const sliderRef=useRef(null);useEffect(()=>{const interval=setInterval(()=>{if(sliderRef.current){sliderRef.current.scrollLeft+=320;if(sliderRef.current.scrollLeft+sliderRef.current.clientWidth>=sliderRef.current.scrollWidth){sliderRef.current.scrollLeft=0;}}},3000);return()=>clearInterval(interval);},[]);return(<div className="testimonial-container"><motion.div ref={sliderRef} className="testimonial-wrapper" drag="x" dragConstraints={{left:-1000,right:0}}>{testimonials.map((testimonial,index)=>(<div className="testimonial" key={index}><h3>{testimonial.text}</h3><div className="profile"><img src={testimonial.img} alt={testimonial.name}/><div><strong>{testimonial.name}</strong><span>{testimonial.role}</span></div></div></div>))}</motion.div></div>);};export default TestimonialSlider;
+import React from 'react';
+import { motion } from 'framer-motion'; // Framer Motion for animations
+import './Testimonials.css'; // Custom CSS for styling
+
+// Testimonial Data (You can replace this with real data)
+const testimonials = [
+  {
+    id: 1,
+    name: 'John Doe',
+    role: 'CEO, Tech Solutions',
+    image: 'https://via.placeholder.com/150', // Replace with actual image URL
+    comment:
+      'This guy is a genius! He transformed our website into a modern, user-friendly platform. Highly recommended!',
+  },
+  {
+    id: 2,
+    name: 'Jane Smith',
+    role: 'Marketing Director, Innovate Inc.',
+    image: 'https://via.placeholder.com/150', // Replace with actual image URL
+    comment:
+      'Working with him was a game-changer for our business. His attention to detail and creativity are unmatched.',
+  },
+  {
+    id: 3,
+    name: 'Mike Johnson',
+    role: 'Founder, Code Masters',
+    image: 'https://via.placeholder.com/150', // Replace with actual image URL
+    comment:
+      'He delivered beyond our expectations. His technical skills and professionalism are top-notch.',
+  },
+];
+
+// Testimonial Card Component
+const TestimonialCard = ({ name, role, image, comment }) => {
+  return (
+    <motion.div
+      className="testimonial-card"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6 }}
+    >
+      <div className="testimonial-image">
+        <img src={image} alt={name} />
+      </div>
+      <div className="testimonial-content">
+        <h3>{name}</h3>
+        <p className="role">{role}</p>
+        <p className="comment">{comment}</p>
+      </div>
+    </motion.div>
+  );
+};
+
+// Testimonials Component
+const Testimonials = () => {
+  return (
+    <section className="testimonials-section">
+      <h2>What People Say About Me</h2>
+      <div className="underline"></div>
+      <div className="testimonials-container">
+        {testimonials.map((testimonial) => (
+          <TestimonialCard key={testimonial.id} {...testimonial} />
+        ))}
+      </div>
+    </section>
+  );
+};
+
+export default Testimonials;
