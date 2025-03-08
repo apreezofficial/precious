@@ -42,7 +42,7 @@ const testimonials = [
 ];
 
 // Testimonial Slider Component
-const TestimonialSlider = () => {
+const testimonial = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextTestimonial = () => {
@@ -96,4 +96,4 @@ const TestimonialSlider = () => {
   );
 };
 
-export default TestimonialSlider;
+export default testimonial;
