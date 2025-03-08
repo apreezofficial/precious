@@ -184,7 +184,7 @@ export default function Page() {
         </div>
       </section>
 
-      <Testimonal />
+      <Testimonial />
     </>
   );
 }
