@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion'; // Framer Motion for animations
-import './Testimonials.css'; // Custom CSS for styling
+import './testimonials.css'; // Custom CSS for styling
 
 // Testimonial Data (You can replace this with real data)
 const testimonials = [
