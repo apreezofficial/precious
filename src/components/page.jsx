@@ -113,11 +113,10 @@ export default function Page() {
 </div>
 <p>A hub of inspiration! Discover and share powerful quotes on life, success, and motivation. Designed for a seamless user experience, APQuotes Hub brings words that move you to your fingertips.</p>
 <div class="project-icons">
-<i class="fab fa-aws"></i>
-<i class="fab fa-vuejs"></i>
-<i class="fas fa-wave-square"></i>
-<i class="fas fa-mountain"></i>
-<i class="fab fa-v"></i>
+<i class="fa-brands fa-html5"></i>
+<i class="fa-brands fa-css3-alt"></i>
+<i class="fa-brands fa-js"></i>
+<i class="fa-solid fa-bootstrap"></i>
 </div>
 </div>
 <div class="project-card">
@@ -127,11 +126,14 @@ export default function Page() {
 </div>
 <p>Never miss a moment! Get live scores, match updates, and real-time stats from leagues worldwide. With a modern design and smooth experience, One Footy Stream keeps football fans connected to the game.</p>
 <div class="project-icons">
-<i class="fab fa-aws"></i>
-<i class="fab fa-vuejs"></i>
-<i class="fas fa-wave-square"></i>
-<i class="fas fa-mountain"></i>
-<i class="fab fa-v"></i>
+<i class="fa-brands fa-html5"></i>
+<i class="fa-brands fa-css3-alt"></i>
+<i class="fa-brands fa-js"></i>
+<i class="fa-solid fa-react"></i>
+<i class="fa-brands fa-bootstrap"></i>
+<i class="fa-brands fa-css3-alt"></i>
+<i class="fa-brands fa-js"></i>
+<i class="fa-solid fa-database"></i>
 </div>
 </div>
 
