@@ -100,9 +100,10 @@ export default function Page() {
 </div>
 <p>Stay ahead of the weather with real-time forecasts, dynamic backgrounds, and a sleek interface. Get location-based updates, theme customization, and an intuitive experience—all in one app.</p>
 <div class="project-icons">
-<i class="fa-brands fa-html5"></i>
+<i class="fa-brands fa-vuejs"></i>
 <i class="fa-brands fa-css3-alt"></i>
 <i class="fa-brands fa-js"></i>
+<i class="fa-solid fa-cloud"></i>
 <i class="fa-solid fa-database"></i>
 </div>
 </div>
@@ -127,10 +128,10 @@ export default function Page() {
 <p>Never miss a moment! Get live scores, match updates, and real-time stats from leagues worldwide. With a modern design and smooth experience, One Footy Stream keeps football fans connected to the game.</p>
 <div class="project-icons">
 <i class="fa-brands fa-php"></i>
-<i class="fa-brands fa-plug"></i>
+<i class="fa-solid fa-plug"></i>
 <i class="fa-brands fa-js"></i>
 <i class="fa-solid fa-react"></i>
-<i class="fa-brands fa-bootstrap"></i>
+<i class="fab fa-bootstrap"></i>
 <i class="fa-solid fa-database"></i>
 </div>
 </div>
