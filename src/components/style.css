@@ -20,7 +20,7 @@ body:has(.navbar) .navbar:after { content: ""; position: absolute; width: 100%; 
 h1 { font-size: 2.5rem; font-weight: bold; background: linear-gradient(to right, var(--primary-accent-color), var(--secondary-accent-color)); -webkit-background-clip: text; color: transparent; }  
 h1 span { font-weight: bold; }  
 p { font-size: 1rem; text-align: left; line-height: 1.5; margin: 10px 0; color: var(--primary-text-color); }  
-.social-icons { margin-top: 20px; display: flex; gap: 15px; width:50px; height: 50px; margin-left: 120px;}  
+.social-icons { margin-top: 20px; display: flex; gap: 15px; width:50px; height: 50px; margin-left: 100px;}  
 .social-icons a { font-size: 27px; color: var(--primary-accent-color); border: 2px solid var(--icon-border-color); padding: 5px; border-radius: 50%; transition: transform 0.3s ease, color 0.3s ease, background 0.3s ease; }  
 .social-icons a:hover { transform: scale(0.8); color: var(--secondary-accent-color); background: var(--primary-accent-color); }  
 .profile-pic { position: relative; display: flex; align-items: center; justify-content: center; border: 3px solid var(--primary-accent-color); padding: 10px; border-radius: 10px; }  
