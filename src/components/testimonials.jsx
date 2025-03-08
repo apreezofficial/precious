@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Testimonials.css'; // Custom CSS for styling
+import './testimonials.css'; // Custom CSS for styling
 
 // Testimonial Data (You can replace this with real data)
 const testimonials = [
@@ -42,7 +42,7 @@ const testimonials = [
 ];
 
 // Testimonial Slider Component
-const testimonial = () => {
+const Testimonial = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextTestimonial = () => {
@@ -96,4 +96,4 @@ const testimonial = () => {
   );
 };
 
-export default testimonial;
+export default Testimonial;
