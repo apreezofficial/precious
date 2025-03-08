@@ -98,7 +98,7 @@ export default function Page() {
 <h3> Weather App</h3>
 <a href="https://apweatherapp.vercel.app/ "><i class="fas fa-external-link-alt"></i></a>
 </div>
-<p>Wow is a Wake-on-LAN app that remotely powers on computers and provides features like status checks, shutdown, reboot, sleep, and lock.</p>
+<p>Stay ahead of the weather with real-time forecasts, dynamic backgrounds, and a sleek interface. Get location-based updates, theme customization, and an intuitive experience—all in one app.</p>
 <div class="project-icons">
 <i class="fab fa-aws"></i>
 <i class="fab fa-vuejs"></i>
@@ -112,7 +112,7 @@ export default function Page() {
 <h3> To-Do List</h3>
 <a href="https://ap-todo.vercel.app/ "><i class="fas fa-external-link-alt"></i></a>
 </div>
-<p>Wow is a Wake-on-LAN app that remotely powers on computers and provides features like status checks, shutdown, reboot, sleep, and lock.</p>
+<p>A hub of inspiration! Discover and share powerful quotes on life, success, and motivation. Designed for a seamless user experience, APQuotes Hub brings words that move you to your fingertips.</p>
 <div class="project-icons">
 <i class="fab fa-aws"></i>
 <i class="fab fa-vuejs"></i>
@@ -126,7 +126,7 @@ export default function Page() {
 <h3>Football Livescore Site</h3>
 <a href="https://ap-sports.vercel.app "><i class="fas fa-external-link-alt"></i></a>
 </div>
-<p>Wow is a Wake-on-LAN app that remotely powers on computers and provides features like status checks, shutdown, reboot, sleep, and lock.</p>
+<p>Never miss a moment! Get live scores, match updates, and real-time stats from leagues worldwide. With a modern design and smooth experience, One Footy Stream keeps football fans connected to the game.</p>
 <div class="project-icons">
 <i class="fab fa-aws"></i>
 <i class="fab fa-vuejs"></i>
