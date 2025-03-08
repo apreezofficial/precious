@@ -109,8 +109,8 @@ export default function Page() {
 </div>
 <div class="project-card">
 <div class="project-header">
-<h3> To-Do List</h3>
-<a href="https://ap-todo.vercel.app/ "><i class="fas fa-external-link-alt"></i></a>
+<h3>Quotes Hub</h3>
+<a href="https://hub-eight-pied.vercel.app/#290"><i class="fas fa-external-link-alt"></i></a>
 </div>
 <p>A hub of inspiration! Discover and share powerful quotes on life, success, and motivation. Designed for a seamless user experience, APQuotes Hub brings words that move you to your fingertips.</p>
 <div class="project-icons">
