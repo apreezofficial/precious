@@ -1,7 +1,4 @@
 import React, { useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // FontAwesome for icons
-import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'; // Chevron icons
-import { faUsa, faCanada, faUnitedKingdom, faAustralia } from '@fortawesome/free-brands-svg-icons'; // Country flags
 import './Testimonials.css'; // Custom CSS for styling
 
 // Testimonial Data (You can replace this with real data)
@@ -13,7 +10,7 @@ const testimonials = [
     image: 'https://via.placeholder.com/150', // Replace with actual image URL
     comment:
       'This guy is a genius! He transformed our website into a modern, user-friendly platform. Highly recommended!',
-    country: faUsa, // USA flag
+    country: 'fas fa-flag-usa', // USA flag
   },
   {
     id: 2,
@@ -22,7 +19,7 @@ const testimonials = [
     image: 'https://via.placeholder.com/150', // Replace with actual image URL
     comment:
       'Working with him was a game-changer for our business. His attention to detail and creativity are unmatched.',
-    country: faCanada, // Canada flag
+    country: 'fas fa-flag-canada', // Canada flag
   },
   {
     id: 3,
@@ -31,7 +28,7 @@ const testimonials = [
     image: 'https://via.placeholder.com/150', // Replace with actual image URL
     comment:
       'He delivered beyond our expectations. His technical skills and professionalism are top-notch.',
-    country: faUnitedKingdom, // UK flag
+    country: 'fas fa-flag-uk', // UK flag
   },
   {
     id: 4,
@@ -40,7 +37,7 @@ const testimonials = [
     image: 'https://via.placeholder.com/150', // Replace with actual image URL
     comment:
       'His ability to solve complex problems is incredible. We’re so glad we chose him for our project!',
-    country: faAustralia, // Australia flag
+    country: 'fas fa-flag-australia', // Australia flag
   },
 ];
 
@@ -64,7 +61,7 @@ const TestimonialSlider = () => {
       <div className="underline"></div>
       <div className="slider-container">
         <button className="slider-button prev" onClick={prevTestimonial}>
-          <FontAwesomeIcon icon={faChevronLeft} />
+          <i className="fas fa-chevron-left"></i>
         </button>
         <div className="slider">
           {testimonials.map((testimonial, index) => (
@@ -80,7 +77,7 @@ const TestimonialSlider = () => {
               <div className="testimonial-image">
                 <img src={testimonial.image} alt={testimonial.name} />
                 <div className="country-logo">
-                  <FontAwesomeIcon icon={testimonial.country} />
+                  <i className={testimonial.country}></i>
                 </div>
               </div>
               <div className="testimonial-content">
@@ -92,7 +89,7 @@ const TestimonialSlider = () => {
           ))}
         </div>
         <button className="slider-button next" onClick={nextTestimonial}>
-          <FontAwesomeIcon icon={faChevronRight} />
+          <i className="fas fa-chevron-right"></i>
         </button>
       </div>
     </section>
