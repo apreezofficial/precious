@@ -35,6 +35,22 @@ const bounceVariants = {
   },
 };
 
+// Globe Spin Animation Variants
+const globeVariants = {
+  hidden: { opacity: 0, scale: 0.5, rotate: 0 }, // Start hidden, smaller, and not rotated
+  visible: {
+    opacity: 1,
+    scale: 1,
+    rotate: 360, // Full rotation
+    transition: {
+      type: 'spring', // Spring animation for smooth rotation
+      stiffness: 50, // Adjust stiffness for more/less bounce
+      damping: 10, // Adjust damping for more/less bounce
+      delay: 0.5, // Slight delay before animation starts
+    },
+  },
+};
+
 export default function Page() {
   return (
     <>
@@ -75,7 +91,15 @@ export default function Page() {
         </div>
       </motion.section>
 
-      <Globe />
+      {/* Globe Component with Spin Effect */}
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={globeVariants}
+      >
+        <Globe />
+      </motion.div>
 
       {/* Banner Section */}
       <div className="banner-container">
