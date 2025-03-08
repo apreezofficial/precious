@@ -1,6 +1,8 @@
-import React from 'react';
-import { motion } from 'framer-motion'; // Framer Motion for animations
-import './testimonials.css'; // Custom CSS for styling
+import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // FontAwesome for icons
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'; // Chevron icons
+import { faUsa, faCanada, faUnitedKingdom, faAustralia } from '@fortawesome/free-brands-svg-icons'; // Country flags
+import './Testimonials.css'; // Custom CSS for styling
 
 // Testimonial Data (You can replace this with real data)
 const testimonials = [
@@ -11,6 +13,7 @@ const testimonials = [
     image: 'https://via.placeholder.com/150', // Replace with actual image URL
     comment:
       'This guy is a genius! He transformed our website into a modern, user-friendly platform. Highly recommended!',
+    country: faUsa, // USA flag
   },
   {
     id: 2,
@@ -19,6 +22,7 @@ const testimonials = [
     image: 'https://via.placeholder.com/150', // Replace with actual image URL
     comment:
       'Working with him was a game-changer for our business. His attention to detail and creativity are unmatched.',
+    country: faCanada, // Canada flag
   },
   {
     id: 3,
@@ -27,44 +31,72 @@ const testimonials = [
     image: 'https://via.placeholder.com/150', // Replace with actual image URL
     comment:
       'He delivered beyond our expectations. His technical skills and professionalism are top-notch.',
+    country: faUnitedKingdom, // UK flag
+  },
+  {
+    id: 4,
+    name: 'Sarah Lee',
+    role: 'Product Manager, Bright Ideas',
+    image: 'https://via.placeholder.com/150', // Replace with actual image URL
+    comment:
+      'His ability to solve complex problems is incredible. We’re so glad we chose him for our project!',
+    country: faAustralia, // Australia flag
   },
 ];
 
-// Testimonial Card Component
-const TestimonialCard = ({ name, role, image, comment }) => {
-  return (
-    <motion.div
-      className="testimonial-card"
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.6 }}
-    >
-      <div className="testimonial-image">
-        <img src={image} alt={name} />
-      </div>
-      <div className="testimonial-content">
-        <h3>{name}</h3>
-        <p className="role">{role}</p>
-        <p className="comment">{comment}</p>
-      </div>
-    </motion.div>
-  );
-};
+// Testimonial Slider Component
+const TestimonialSlider = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-// Testimonials Component
-const Testimonials = () => {
+  const nextTestimonial = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
+  };
+
+  const prevTestimonial = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1
+    );
+  };
+
   return (
     <section className="testimonials-section">
       <h2>What People Say About Me</h2>
       <div className="underline"></div>
-      <div className="testimonials-container">
-        {testimonials.map((testimonial) => (
-          <TestimonialCard key={testimonial.id} {...testimonial} />
-        ))}
+      <div className="slider-container">
+        <button className="slider-button prev" onClick={prevTestimonial}>
+          <FontAwesomeIcon icon={faChevronLeft} />
+        </button>
+        <div className="slider">
+          {testimonials.map((testimonial, index) => (
+            <div
+              key={testimonial.id}
+              className={`testimonial-card ${
+                index === currentIndex ? 'active' : ''
+              }`}
+              style={{
+                transform: `translateX(${100 * (index - currentIndex)}%)`,
+              }}
+            >
+              <div className="testimonial-image">
+                <img src={testimonial.image} alt={testimonial.name} />
+                <div className="country-logo">
+                  <FontAwesomeIcon icon={testimonial.country} />
+                </div>
+              </div>
+              <div className="testimonial-content">
+                <h3>{testimonial.name}</h3>
+                <p className="role">{testimonial.role}</p>
+                <p className="comment">{testimonial.comment}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+        <button className="slider-button next" onClick={nextTestimonial}>
+          <FontAwesomeIcon icon={faChevronRight} />
+        </button>
       </div>
     </section>
   );
 };
 
-export default Testimonials;
+export default TestimonialSlider;
