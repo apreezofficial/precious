@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion'; // Framer Motion for animations
 import './style.css';
 import Globe from './globe';
-import TestimonialSlider from './testimonials';
+import Testimonials from './testimonials';
 import Mymg from './pic.jpg';
 
 // Scroll Animation Component
