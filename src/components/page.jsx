@@ -35,15 +35,14 @@ const bounceVariants = {
   },
 };
 
-// Globe Spin Animation Variants
+// Globe Zoom-Out Animation Variants
 const globeVariants = {
-  hidden: { opacity: 0, scale: 0.5, rotate: 0 }, // Start hidden, smaller, and not rotated
+  hidden: { opacity: 0, scale: 0.5 }, // Start hidden and smaller
   visible: {
     opacity: 1,
-    scale: 1,
-    rotate: 360, // Full rotation
+    scale: 1, // Zoom out to full size
     transition: {
-      type: 'spring', // Spring animation for smooth rotation
+      type: 'spring', // Spring animation for smooth zoom
       stiffness: 50, // Adjust stiffness for more/less bounce
       damping: 10, // Adjust damping for more/less bounce
       delay: 0.5, // Slight delay before animation starts
@@ -91,7 +90,7 @@ export default function Page() {
         </div>
       </motion.section>
 
-      {/* Globe Component with Spin Effect */}
+      {/* Globe Component with Zoom-Out Effect */}
       <motion.div
         initial="hidden"
         whileInView="visible"
