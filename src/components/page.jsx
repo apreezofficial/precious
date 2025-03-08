@@ -36,7 +36,7 @@ export default function Page() {
 <p>I specialize in various areas of programming, offering web development, app development, cybersecurity, database management, and backend engineering solutions.  </p>
 <div class="services-container">
 <div class="service-card">
-<i class="fas fa-code"></i>
+<i class="fas fa-laptop-code"></i>
 <h3>Frontend Web Development</h3>
  <p>I create responsive, user-friendly web interfaces with a focus on seamless UX, performance, and modern technologies. </p>
  </div>
@@ -47,44 +47,44 @@ export default function Page() {
 <p>I build secure, scalable, and efficient backend systems, ensuring seamless data management and performance. </p></div>
 
 <div class="service-card">
-<i class="fas fa-mobile-alt"></i> 
+<i class="fas fa-gamepad"></i> 
 <h3>Game Development</h3>
 <p>I develop interactive and engaging games with a focus on performance, scalability, and immersive user experiences. </p>
 </div>
 
 <div class="service-card">
-<i class="fas fa-robot"></i>
+<i class="fas fa-database"></i>
 <h3> Database Management</h3>
  <p>I design, optimize, and manage databases for efficient data storage, retrieval, and security. </p>
  </div> 
 
 <div class="service-card">
-<i class="fas fa-paint-brush"></i>
+<i class="fas fa-mobile-alt"></i>
 <h3> App Development</h3>
  <p>I build high-performance, scalable, and user-friendly applications for web and mobile platforms. </p></div>
 
 <div class="service-card">
-<i class="fas fa-cloud"></i>
+<i class="fas fa-robot"></i>
 <h3> Automation Engineering</h3> 
 <p>I build high-performance, scalable, and user-friendly applications for web and mobile platforms. </p>
 </div>
 
 <div class="service-card">
-    <i class="fas fa-paint-brush"></i>
+    <i class="fas fa-search"></i>
     <h3> Search Optimisation</h3> 
 
  <p>I optimize websites for better search engine visibility, higher rankings, and increased organic traffic. </p>
     </div>
 
 <div class="service-card">
-        <i class="fas fa-paint-brush"></i>
+        <i class="fas fa-palatte"></i>
             <h3>UI/UX Design</h3>
                 <p>Designing intuitive and visually appealing interfaces with a focus on user experience and modern design trends.</p>
                 </div>
 
                 <div class="service-card">
                     <i class="fas fa-tools"></i>
-                        <h3>Web Maintenance</h3>
+                        <h3>Web Maintenance and Support</h3>
                             <p>Ensuring website security, performance, and updates for smooth and uninterrupted operation.</p>
                             </div>
 </div>
