@@ -126,13 +126,11 @@ export default function Page() {
 </div>
 <p>Never miss a moment! Get live scores, match updates, and real-time stats from leagues worldwide. With a modern design and smooth experience, One Footy Stream keeps football fans connected to the game.</p>
 <div class="project-icons">
-<i class="fa-brands fa-html5"></i>
-<i class="fa-brands fa-css3-alt"></i>
+<i class="fa-brands fa-php"></i>
+<i class="fa-brands fa-plug"></i>
 <i class="fa-brands fa-js"></i>
 <i class="fa-solid fa-react"></i>
 <i class="fa-brands fa-bootstrap"></i>
-<i class="fa-brands fa-css3-alt"></i>
-<i class="fa-brands fa-js"></i>
 <i class="fa-solid fa-database"></i>
 </div>
 </div>
