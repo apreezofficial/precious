@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './testimonials.css'; // Custom CSS for styling
+import './Testimonials.css'; // Custom CSS for styling
 
 // Testimonial Data (You can replace this with real data)
 const testimonials = [
