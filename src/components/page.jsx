@@ -183,6 +183,50 @@ export default function Page() {
           ))}
         </div>
       </section>
+      {/* Projects Section with Scroll Animations */}
+      <section className="projects">
+        <h2>Projects</h2>
+        <div className="underline"></div>
+        <div className="projects-container">
+          {[
+            {
+              title: 'Weather App',
+              link: 'https://apweatherapp.vercel.app/',
+              description: 'Stay ahead of the weather with real-time forecasts, dynamic backgrounds, and a sleek interface. Get location-based updates, theme customization, and an intuitive experience—all in one app.',
+              icons: ['fa-brands fa-vuejs', 'fa-brands fa-css3-alt', 'fa-brands fa-js', 'fa-solid fa-cloud', 'fa-solid fa-database'],
+            },
+            {
+              title: 'Quotes Hub',
+              link: 'https://hub-eight-pied.vercel.app/#290',
+              description: 'A hub of inspiration! Discover and share powerful quotes on life, success, and motivation. Designed for a seamless user experience, APQuotes Hub brings words that move you to your fingertips.',
+              icons: ['fa-brands fa-html5', 'fa-brands fa-css3-alt', 'fa-brands fa-js', 'fab fa-bootstrap'],
+            },
+            {
+              title: 'Football Livescore Site',
+              link: 'https://ap-sports.vercel.app',
+              description: 'Never miss a moment! Get live scores, match updates, and real-time stats from leagues worldwide. With a modern design and smooth experience, One Footy Stream keeps football fans connected to the game.',
+              icons: ['fa-brands fa-php', 'fa-solid fa-plug', 'fa-brands fa-js', 'fa-brands fa-react', 'fab fa-bootstrap', 'fa-solid fa-database'],
+            },
+          ].map((project, index) => (
+            <ScrollAnimation key={index} delay={index * 0.2}>
+              <div className="project-card">
+                <div className="project-header">
+                  <h3>{project.title}</h3>
+                  <a href={project.link}>
+                    <i className="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+                <p>{project.description}</p>
+                <div className="project-icons">
+                  {project.icons.map((icon, i) => (
+                    <i key={i} className={icon}></i>
+                  ))}
+                </div>
+              </div>
+            </ScrollAnimation>
+          ))}
+        </div>
+      </section>
 
       <Testimonial />
     </>
