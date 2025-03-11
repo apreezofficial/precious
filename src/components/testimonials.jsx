@@ -43,57 +43,7 @@ const testimonials = [
 
 // Testimonial Slider Component
 const Testimonial = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const nextTestimonial = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
-  };
-
-  const prevTestimonial = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1
-    );
-  };
-
-  return (
-    <section className="testimonials-section">
-      <h2>What People Say About Me</h2>
-      <div className="underline"></div>
-      <div className="slider-container">
-        <button className="slider-button prev" onClick={prevTestimonial}>
-          <i className="fas fa-chevron-left"></i>
-        </button>
-        <div className="slider">
-          {testimonials.map((testimonial, index) => (
-            <div
-              key={testimonial.id}
-              className={`testimonial-card ${
-                index === currentIndex ? 'active' : ''
-              }`}
-              style={{
-                transform: `translateX(${100 * (index - currentIndex)}%)`,
-              }}
-            >
-              <div className="testimonial-image">
-                <img src={testimonial.image} alt={testimonial.name} />
-                <div className="country-logo">
-                  <i className={testimonial.country}></i>
-                </div>
-              </div>
-              <div className="testimonial-content">
-                <h3>{testimonial.name}</h3>
-                <p className="role">{testimonial.role}</p>
-                <p className="comment">{testimonial.comment}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-        <button className="slider-button next" onClick={nextTestimonial}>
-          <i className="fas fa-chevron-right"></i>
-        </button>
-      </div>
-    </section>
-  );
+return <h1>Ap</h1>
 };
 
 export default Testimonial;
