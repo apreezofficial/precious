@@ -185,8 +185,6 @@ export default function Page() {
       </section>
       {/* Projects Section with Scroll Animations */}
       <section className="projects">
-        <h2>Projects</h2>
-        <div className="underline"></div>
         <div className="projects-container">
           {[
             {
