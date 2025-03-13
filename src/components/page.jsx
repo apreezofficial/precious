@@ -158,6 +158,7 @@ export default function Page() {
       </section>
 
       {/* Testimonials */}
+      <center><h2>Testimonials</h2></center>
       <Testimonials />
     </>
   );
