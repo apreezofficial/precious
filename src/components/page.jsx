@@ -158,7 +158,7 @@ export default function Page() {
       </section>
 
       {/* Testimonials */}
-      <Testimonial />
+      <Testimonials />
     </>
   );
 }
