@@ -1,46 +1,62 @@
 .testimonials-container {
   text-align: center;
-  padding: 20px;
+  padding: 60px 20px;
   font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .testimonials-container h2 {
-  font-size: 24px;
+  font-size: 2.5rem;
   color: #333;
   margin-bottom: 10px;
+  font-weight: bold;
 }
 
 .testimonials-container h3 {
-  font-size: 18px;
+  font-size: 1.5rem;
   color: #666;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+  font-weight: 300;
 }
 
-.testimonials-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
+.testimonial-slide {
   padding: 20px;
+  outline: none;
 }
 
 .testimonial-card {
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding: 30px;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
 }
 
 .testimonial-text {
-  font-size: 20px;
+  font-size: 1.5rem;
   color: #444;
   font-style: italic;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  font-weight: 600;
 }
 
 .testimonial-content {
-  font-size: 16px;
+  font-size: 1rem;
   color: #555;
-  line-height: 1.6;
-  margin-bottom: 20px;
+  line-height: 1.8;
+  margin-bottom: 25px;
 }
 
 .testimonial-author {
@@ -48,12 +64,26 @@
 }
 
 .author-name {
-  font-size: 18px;
+  font-size: 1.2rem;
   color: #333;
   font-weight: bold;
 }
 
 .author-title {
-  font-size: 14px;
+  font-size: 0.9rem;
   color: #777;
+}
+
+/* Slider Dots Customization */
+.slick-dots {
+  bottom: -40px;
+}
+
+.slick-dots li button:before {
+  font-size: 12px;
+  color: #666;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #333;
 }
