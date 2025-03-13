@@ -6,42 +6,42 @@ const Testimonials = () => {
     {
       bgColor: 'rgba(249, 249, 249, 0.7)', // Light gray
       text: 'A reliable developer with a keen eye for detail',
-      content: 'Aayush delivered exceptional work on our project. His meticulous approach and strong communication skills greatly enhanced the quality of our web applications. He\'s a dependable developer who collaborates seamlessly with the team.',
+      content: 'Precious delivered exceptional work on our project. His meticulous approach and strong communication skills greatly enhanced the quality of our web applications.',
       authorName: 'Ethan Parker',
       authorTitle: 'Manager • TechFusion'
     },
     {
       bgColor: 'rgba(227, 242, 253, 0.7)', // Light blue
       text: 'Highly skilled and professional',
-      content: 'Working with Aayush was a pleasure. His expertise in React and Node.js helped us deliver our project ahead of schedule. Highly recommended!',
+      content: 'Working with Precious was a pleasure. His expertise in React and Node.js helped us deliver our project ahead of schedule. Highly recommended!',
       authorName: 'Sarah Johnson',
       authorTitle: 'CTO • InnovateTech'
     },
     {
       bgColor: 'rgba(255, 243, 224, 0.7)', // Light orange
       text: 'Exceptional problem-solving skills',
-      content: 'Aayush tackled complex problems with ease and provided solutions that were both efficient and scalable. His dedication to quality is unmatched.',
+      content: 'Precious tackled complex problems with ease and provided solutions that were both efficient and scalable. His dedication to quality is unmatched.',
       authorName: 'Michael Brown',
       authorTitle: 'Lead Developer • CodeCraft'
     },
     {
       bgColor: 'rgba(251, 233, 231, 0.7)', // Light pink
       text: 'Great team player',
-      content: 'Aayush is not only a talented developer but also a great team player. He always goes the extra mile to ensure the team\'s success.',
+      content: 'Precious is not only a talented developer but also a great team player. He always goes the extra mile to ensure the team\'s success.',
       authorName: 'Emily Davis',
       authorTitle: 'Project Manager • DevWorks'
     },
     {
       bgColor: 'rgba(232, 245, 233, 0.7)', // Light green
       text: 'Innovative and creative',
-      content: 'Aayush brought fresh ideas to the table and helped us innovate our product. His creativity and technical skills are top-notch.',
+      content: 'Apcodesphere brought fresh ideas to the table and helped us innovate our product. His creativity and technical skills are top-notch.',
       authorName: 'David Wilson',
       authorTitle: 'Product Manager • NextGen'
     },
     {
       bgColor: 'rgba(243, 229, 245, 0.7)', // Light purple
       text: 'Reliable and efficient',
-      content: 'Aayush consistently delivered high-quality work on time. His efficiency and reliability made him a valuable asset to our team.',
+      content: 'Precious consistently delivered high-quality work on time. His efficiency and reliability made him a valuable asset to our team.',
       authorName: 'Laura Martinez',
       authorTitle: 'Senior Developer • TechSolutions'
     }
