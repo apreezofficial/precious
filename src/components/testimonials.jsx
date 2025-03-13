@@ -1,5 +1,5 @@
 import React from 'react';
-import './Testimonials.css';
+import './testimonials.css';
 
 const Testimonial = ({ bgColor, text, content, authorName, authorTitle }) => {
   return (
