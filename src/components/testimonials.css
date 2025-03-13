@@ -1,3 +1,4 @@
+/* Base Styles */
 .testimonials-container {
   text-align: center;
   padding: 60px 20px;
@@ -24,6 +25,14 @@
   font-weight: 300;
 }
 
+/* Slider Container */
+.testimonials-slider {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Testimonial Card */
 .testimonial-slide {
   padding: 20px;
   outline: none;
@@ -55,7 +64,7 @@
 .testimonial-content {
   font-size: 1rem;
   color: #555;
-  line-height: 1.8;
+  line-height: 1.6;
   margin-bottom: 25px;
 }
 
@@ -86,4 +95,57 @@
 
 .slick-dots li.slick-active button:before {
   color: #333;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .testimonials-container h2 {
+    font-size: 2rem;
+  }
+
+  .testimonials-container h3 {
+    font-size: 1.2rem;
+  }
+
+  .testimonial-text {
+    font-size: 1.2rem;
+  }
+
+  .testimonial-content {
+    font-size: 0.9rem;
+  }
+
+  .author-name {
+    font-size: 1rem;
+  }
+
+  .author-title {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonials-container h2 {
+    font-size: 1.8rem;
+  }
+
+  .testimonials-container h3 {
+    font-size: 1rem;
+  }
+
+  .testimonial-text {
+    font-size: 1rem;
+  }
+
+  .testimonial-content {
+    font-size: 0.8rem;
+  }
+
+  .author-name {
+    font-size: 0.9rem;
+  }
+
+  .author-title {
+    font-size: 0.7rem;
+  }
 }
