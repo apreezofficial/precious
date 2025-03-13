@@ -49,6 +49,7 @@ const Testimonials = () => {
 
   // Initialize Slick Slider
   useEffect(() => {
+    // Ensure the DOM is fully loaded before initializing the slider
     const initializeSlider = () => {
       $('.testimonials-slider').slick({
         dots: true,
@@ -65,7 +66,13 @@ const Testimonials = () => {
       });
     };
 
+    // Initialize the slider
     initializeSlider();
+
+    // Cleanup function to destroy the slider when the component unmounts
+    return () => {
+      $('.testimonials-slider').slick('unslick');
+    };
   }, []);
 
   return (
