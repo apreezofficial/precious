@@ -77,8 +77,6 @@ const Testimonials = () => {
 
   return (
     <div className="testimonials-container">
-      <h2>TESTIMONIALS</h2>
-      <h3>Word on the street about me</h3>
       <div className="testimonials-slider">
         {testimonialsData.map((testimonial, index) => (
           <div key={index} className="testimonial-slide">
