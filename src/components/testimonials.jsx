@@ -6,7 +6,7 @@ const Testimonials = () => {
     {
       bgColor: 'rgba(249, 249, 249, 0.7)', // Light gray
       text: 'A reliable developer with a keen eye for detail',
-      content: 'Precious delivered exceptional work on our project. His meticulous approach and strong communication skills greatly enhanced the quality of our web applications.',
+      content: 'He delivered exceptional work on our projects.His meticulous approach and strong communication greatly enhanced the quality of our web applications.',
       authorName: 'Ethan Parker',
       authorTitle: 'Manager • TechFusion'
     },
