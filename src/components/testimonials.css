@@ -3,8 +3,8 @@
   text-align: center;
   padding: 60px 20px;
   font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
-  min-height: 100vh;
+  background: transparent;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;
