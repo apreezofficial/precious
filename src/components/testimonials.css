@@ -42,7 +42,6 @@
   border-radius: 20px;
   padding: 30px;
   backdrop-filter: blur(10px);
-  background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -85,7 +84,7 @@
 
 /* Slider Dots Customization */
 .slick-dots {
-  bottom: -40px;
+  bottom: -10px;
 }
 
 .slick-dots li button:before {
