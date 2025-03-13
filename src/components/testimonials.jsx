@@ -1,49 +1,83 @@
-import React, { useState } from 'react';
-import './testimonials.css'; // Custom CSS for styling
+import React from 'react';
+import './Testimonials.css';
 
-// Testimonial Data (You can replace this with real data)
-const testimonials = [
-  {
-    id: 1,
-    name: 'John Doe',
-    role: 'CEO, Tech Solutions',
-    image: 'https://via.placeholder.com/150', // Replace with actual image URL
-    comment:
-      'This guy is a genius! He transformed our website into a modern, user-friendly platform. Highly recommended!',
-    country: 'fas fa-flag-usa', // USA flag
-  },
-  {
-    id: 2,
-    name: 'Jane Smith',
-    role: 'Marketing Director, Innovate Inc.',
-    image: 'https://via.placeholder.com/150', // Replace with actual image URL
-    comment:
-      'Working with him was a game-changer for our business. His attention to detail and creativity are unmatched.',
-    country: 'fas fa-flag-canada', // Canada flag
-  },
-  {
-    id: 3,
-    name: 'Mike Johnson',
-    role: 'Founder, Code Masters',
-    image: 'https://via.placeholder.com/150', // Replace with actual image URL
-    comment:
-      'He delivered beyond our expectations. His technical skills and professionalism are top-notch.',
-    country: 'fas fa-flag-uk', // UK flag
-  },
-  {
-    id: 4,
-    name: 'Sarah Lee',
-    role: 'Product Manager, Bright Ideas',
-    image: 'https://via.placeholder.com/150', // Replace with actual image URL
-    comment:
-      'His ability to solve complex problems is incredible. We’re so glad we chose him for our project!',
-    country: 'fas fa-flag-australia', // Australia flag
-  },
-];
-
-// Testimonial Slider Component
-const Testimonial = () => {
-return <h1>Ap</h1>
+const Testimonial = ({ bgColor, text, content, authorName, authorTitle }) => {
+  return (
+    <div className="testimonial-card" style={{ backgroundColor: bgColor }}>
+      <p className="testimonial-text">{text}</p>
+      <p className="testimonial-content">{content}</p>
+      <div className="testimonial-author">
+        <p className="author-name">{authorName}</p>
+        <p className="author-title">{authorTitle}</p>
+      </div>
+    </div>
+  );
 };
 
-export default Testimonial;
+const Testimonials = () => {
+  const testimonialsData = [
+    {
+      bgColor: '#f9f9f9',
+      text: 'A reliable developer with a keen eye for detail',
+      content: 'Aayush delivered exceptional work on our project. His meticulous approach and strong communication skills greatly enhanced the quality of our web applications. He\'s a dependable developer who collaborates seamlessly with the team.',
+      authorName: 'Ethan Parker',
+      authorTitle: 'Manager • TechFusion'
+    },
+    {
+      bgColor: '#e3f2fd',
+      text: 'Highly skilled and professional',
+      content: 'Working with Aayush was a pleasure. His expertise in React and Node.js helped us deliver our project ahead of schedule. Highly recommended!',
+      authorName: 'Sarah Johnson',
+      authorTitle: 'CTO • InnovateTech'
+    },
+    {
+      bgColor: '#fff3e0',
+      text: 'Exceptional problem-solving skills',
+      content: 'Aayush tackled complex problems with ease and provided solutions that were both efficient and scalable. His dedication to quality is unmatched.',
+      authorName: 'Michael Brown',
+      authorTitle: 'Lead Developer • CodeCraft'
+    },
+    {
+      bgColor: '#fbe9e7',
+      text: 'Great team player',
+      content: 'Aayush is not only a talented developer but also a great team player. He always goes the extra mile to ensure the team\'s success.',
+      authorName: 'Emily Davis',
+      authorTitle: 'Project Manager • DevWorks'
+    },
+    {
+      bgColor: '#e8f5e9',
+      text: 'Innovative and creative',
+      content: 'Aayush brought fresh ideas to the table and helped us innovate our product. His creativity and technical skills are top-notch.',
+      authorName: 'David Wilson',
+      authorTitle: 'Product Manager • NextGen'
+    },
+    {
+      bgColor: '#f3e5f5',
+      text: 'Reliable and efficient',
+      content: 'Aayush consistently delivered high-quality work on time. His efficiency and reliability made him a valuable asset to our team.',
+      authorName: 'Laura Martinez',
+      authorTitle: 'Senior Developer • TechSolutions'
+    }
+  ];
+
+  return (
+    <div className="testimonials-container">
+      <h2>TESTIMONIALS</h2>
+      <h3>Word on the street about me</h3>
+      <div className="testimonials-grid">
+        {testimonialsData.map((testimonial, index) => (
+          <Testimonial
+            key={index}
+            bgColor={testimonial.bgColor}
+            text={testimonial.text}
+            content={testimonial.content}
+            authorName={testimonial.authorName}
+            authorTitle={testimonial.authorTitle}
+          />
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default Testimonials;
