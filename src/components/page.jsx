@@ -48,18 +48,7 @@ export default function Page() {
           <p>I build reliable and scalable solutions with smooth user interactions.</p>
           <p>An upcoming tech content creator and speaker.</p>
           <div className="social-icons">
-            <a href="#">
-              <i className="fab fa-facebook"></i>
-            </a>
-            <a href="#">
-              <i className="fab fa-twitter"></i>
-            </a>
-            <a href="#">
-              <i className="fab fa-instagram"></i>
-            </a>
-            <a href="#">
-              <i className="fab fa-linkedin"></i>
-            </a>
+            <button id="resume-btn">Download My Resume</button>
           </div>
         </div>
         <div className="profile-pic">
