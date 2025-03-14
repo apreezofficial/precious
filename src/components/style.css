@@ -162,20 +162,6 @@ h1 {
 .text-center{
  text-align:center;
 }
-:root {
-    --primary-accent-color: #8A2BE2;
-    --secondary-accent-color: #FF6B00;
-    --glow-color: #ff00ff;
-}
-
-body {
-    background: #0D0D0D;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
 #resume-btn {
     position: relative;
     font-size: 20px;
