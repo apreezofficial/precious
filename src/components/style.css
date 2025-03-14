@@ -204,17 +204,27 @@ h1 {
     color: black;
 }
 
-@keyframes glitch {
-    0% { text-shadow: 5px 5px 0 var(--primary-accent-color); }
-    100% { text-shadow: -5px -5px 0 var(--secondary-accent-color); }
+@keyframes flicker {
+  0% { opacity: 0.7; }
+  100% { opacity: 1; }
 }
 
+@keyframes shake {
+  0% { transform: translateX(-3px) rotate(-1deg); }
+  100% { transform: translateX(3px) rotate(1deg); }
+}
+
+@keyframes glitch {
+  0% { box-shadow: 5px 5px 10px var(--primary-accent-color); }
+  100% { box-shadow: -5px -5px 10px var(--secondary-accent-color); }
+}
+
+@keyframes neonGlow {
+  0% { text-shadow: 0 0 5px var(--primary-accent-color); }
+  100% { text-shadow: 0 0 15px var(--secondary-accent-color); }
+}
 @keyframes glitch-anim {
     0% { clip-path: inset(30% 0 70% 0); }
     100% { clip-path: inset(60% 0 40% 0); }
 }
 
-@keyframes shake {
-    0% { transform: translateX(-5px) rotate(-2deg); }
-    100% { transform: translateX(5px) rotate(2deg); }
-}
