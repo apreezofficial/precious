@@ -124,12 +124,12 @@ export default function Page() {
           {[
             { title: 'AP-AI', link: 'https://ap-ai.vercel.app/', description: 'A modern and feature-rich platform designed for seamless AI-powered interactions, offering smart automation and intelligent responses for businesses and individuals.', icons: ['fa-brands fa-vuejs', 'fa-brands fa-css3-alt', 'fa-brands fa-js', 'fa-brands fa-php', 'fa-solid fa-cloud'] },
             { title: 'Restaurant Site', link: 'https://sausyfoods.vercel.app', description: 'A sleek and user-friendly restaurant website that highlights the menu, reservations, online orders, and customer reviews, ensuring a delightful dining experience.', icons: ['fa-brands fa-html5', 'fa-brands fa-css3-alt', 'fa-brands fa-js'] },
-            { title: 'Tower Game', link: 'https://towerofbabelgame.vercel.app/', description: 'A captivating and immersive Game showcasing the legendary Tower of Hangbel, featuring its history, lore, and stunning visual elements.', icons: ['fa-solid fa-gamepad', 'fa-brands fa-vuejs', 'fa-brands fa-css3-alt', 'fa-brands fa-js', 'fa-solid fa-cloud'] },
-            { title: 'Football Livescore Site', link: 'https://ap-sports.vercel.app', description: 'Live football scores, match updates, and news.', icons: ['fa-brands fa-php', 'fa-solid fa-plug', 'fa-brands fa-js'] },
+               { title: 'Apgrico', link: 'https://apgrico.vercel.app', description: 'A smart calendar app for organizing tasks and events.', icons: ['fa-brands fa-react', 'fa-brands fa-js', 'fa-solid fa-calendar'] },
+         { title: 'Shepherd College', link: 'https://shepherdcollege.vercel.app', description: 'An educational platform for learning web development and cybersecurity.', icons: ['fa-brands fa-html5', 'fa-brands fa-css3-alt', 'fa-brands fa-js'] },
+      { title: 'Tower Game', link: 'https://towerofbabelgame.vercel.app/', description: 'A captivating and immersive Game showcasing the legendary Tower of Hangbel, featuring its history, lore, and stunning visual elements.', icons: ['fa-solid fa-gamepad', 'fa-brands fa-vuejs', 'fa-brands fa-css3-alt', 'fa-brands fa-js', 'fa-solid fa-cloud'] },
+            { title: 'Football Livescore Site', link: 'https://apsports.vercel.app', description: 'Live football scores, match updates, and news.', icons: ['fa-brands fa-php', 'fa-solid fa-plug', 'fa-brands fa-js'] },
             { title: 'APGame Zone', link: 'https://apgamezone.vercel.app', description: 'A platform for interactive online games.', icons: ['fa-brands fa-react', 'fa-brands fa-js', 'fa-solid fa-gamepad'] },
-            { title: 'AP-EDU Site', link: 'https://apedu.rf.gd', description: 'An educational platform for learning web development and cybersecurity.', icons: ['fa-brands fa-html5', 'fa-brands fa-css3-alt', 'fa-brands fa-js'] },
             { title: 'Weather App', link: 'https://apweatherapp.vercel.app/', description: 'Real-time forecasts with location tracking and customizable themes.', icons: ['fa-brands fa-vuejs', 'fa-brands fa-css3-alt', 'fa-brands fa-js', 'fa-solid fa-cloud'] },
-            { title: 'APCal App', link: 'https://apcal.vercel.app', description: 'A smart calendar app for organizing tasks and events.', icons: ['fa-brands fa-react', 'fa-brands fa-js', 'fa-solid fa-calendar'] },
             { title: 'APCal App', link: 'https://apcal.vercel.app', description: 'A smart calendar app for organizing tasks and events.', icons: ['fa-brands fa-react', 'fa-brands fa-js', 'fa-solid fa-calendar'] },
           ].map((project, index) => (
             <ScrollAnimation key={index} delay={index * 0.2}>
@@ -159,7 +159,7 @@ export default function Page() {
 
       {/* Testimonials */}
       <center><h2>Testimonials</h2></center>
-      <center><p><i>What they are saying about me</i></p></center>
+      <p class="text-center"><i>What they are saying about me</i></p>
       <Testimonials />
     </>
   );
