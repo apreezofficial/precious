@@ -47,9 +47,7 @@ export default function Page() {
           </p>
           <p>I build reliable and scalable solutions with smooth user interactions.</p>
           <p>An upcoming tech content creator and speaker.</p>
-          <div className="social-icons">
             <button id="resume-btn">Download My Resume</button>
-          </div>
         </div>
         <div className="profile-pic">
           <img src={Mymg} alt="Profile" />
@@ -148,7 +146,7 @@ export default function Page() {
 
       {/* Testimonials */}
       <center><h2>Testimonials</h2></center>
-      <p class="text-center"><i>What they are saying about me</i></p>
+      <p className="text-center"><i>What they are saying about me</i></p>
       <Testimonials />
     </>
   );
