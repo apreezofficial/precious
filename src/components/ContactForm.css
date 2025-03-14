@@ -1,0 +1,85 @@
+:root {
+  --primary-accent-color: #8A2BE2;
+  --secondary-accent-color: #FF6B00;
+  --glow-color: #ff00ff;
+}
+
+.contact-form-container {
+  position: relative;
+  background: black;
+  padding: 20px;
+  border: 3px solid var(--primary-accent-color);
+  box-shadow: 0 0 15px var(--secondary-accent-color);
+  text-align: center;
+  max-width: 400px;
+  margin: auto;
+  animation: glitch 0.5s infinite alternate;
+}
+
+h2 {
+  color: var(--primary-text-color);
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid var(--secondary-accent-color);
+  background: transparent;
+  color: var(--primary-text-color);
+  font-size: 18px;
+  animation: flicker 0.8s infinite alternate;
+}
+
+textarea {
+  height: 100px;
+  resize: none;
+}
+
+button {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  background: transparent;
+  border: 3px solid var(--primary-accent-color);
+  color: var(--primary-text-color);
+  cursor: pointer;
+  animation: shake 0.3s infinite alternate, neonGlow 1.5s infinite alternate;
+}
+
+button:hover {
+  transform: scale(1.1) rotate(-3deg);
+  border-color: var(--secondary-accent-color);
+  box-shadow: 0 0 20px var(--glow-color);
+}
+
+.submitted-message {
+  background: green;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 20px;
+  box-shadow: 0 0 20px white;
+  border-radius: 10px;
+}
+
+@keyframes flicker {
+  0% { opacity: 0.7; }
+  100% { opacity: 1; }
+}
+
+@keyframes shake {
+  0% { transform: translateX(-3px) rotate(-1deg); }
+  100% { transform: translateX(3px) rotate(1deg); }
+}
+
+@keyframes glitch {
+  0% { box-shadow: 5px 5px 10px var(--primary-accent-color); }
+  100% { box-shadow: -5px -5px 10px var(--secondary-accent-color); }
+}
+
+@keyframes neonGlow {
+  0% { text-shadow: 0 0 5px var(--primary-accent-color); }
+  100% { text-shadow: 0 0 15px var(--secondary-accent-color); }
+  }
