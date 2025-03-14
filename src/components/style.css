@@ -159,3 +159,6 @@ h1 {
 .banner span { display: inline-block; animation: glow 1.5s infinite alternate; }
 
 @keyframes glow { from {text-shadow: 0 0 10px rgba(255,255,255,0.8);} to {text-shadow: 0 0 20px rgba(255,255,255,1);} }
+.text-center{
+ text-align:center;
+}
