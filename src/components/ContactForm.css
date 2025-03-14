@@ -12,26 +12,19 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: var(--background-color);
+  background: transparent;
 }
 
 .contact-form {
-  background: var(--glass-bg);
+  background: transparent;
   padding: 25px;
   backdrop-filter: blur(var(--glass-blur));
   border-radius: 18px;
-  box-shadow: 0px 0px 5px rgba(138, 43, 226, 0.3);
   width: 350px;
   text-align: center;
   transition: all 0.3s ease-in-out;
   border: 2px solid transparent;
 }
-
-.contact-form:hover {
-  border-color: var(--primary-accent);
-  box-shadow: 0px 0px 5px var(--secondary-accent);
-}
-
 h2 {
   color: var(--primary-accent);
   text-shadow: 0 0 10px var(--secondary-accent);
@@ -98,7 +91,7 @@ button:hover {
 
 .error-input {
   border-color: #ff4444 !important;
-  box-shadow: 0 0 15px rgba(255, 68, 68, 0.6) !important;
+  box-shadow: 0 0 5px rgba(255, 68, 68, 0.6) !important;
   animation: shake 0.3s ease-in-out;
 }
 
