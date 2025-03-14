@@ -149,6 +149,7 @@ export default function Page() {
       <center><h2>Testimonials</h2></center>
       <p className="text-center"><i>What they are saying about me</i></p>
       <Testimonials />
+      <ContactForm />
     </>
   );
 }
