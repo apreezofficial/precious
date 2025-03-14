@@ -4,6 +4,7 @@ import './style.css';
 import Globe from './globe';
 import Testimonials from './testimonials';
 import Mymg from './pic.jpg';
+import ContactForm from './ContactForm';
 
 // Scroll Animation Component
 const ScrollAnimation = ({ children, delay = 0 }) => {
