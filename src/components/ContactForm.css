@@ -1,34 +1,59 @@
 :root {
-  --primary-accent-color: #8A2BE2;
-  --secondary-accent-color: #FF6B00;
-  --glow-color: #ff00ff;
+  --background-color: #0D0D0D;
+  --text-color: #EAEAEA;
+  --primary-accent: #8A2BE2;
+  --secondary-accent: #FF6B00;
+  --glass-bg: rgba(255, 255, 255, 0.1);
+  --glass-blur: 10px;
 }
 
-.contact-form-container {
-  position: relative;
-  background: black;
-  padding: 20px;
-  border: 3px solid var(--primary-accent-color);
-  box-shadow: 0 0 15px var(--secondary-accent-color);
+.contact-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: var(--background-color);
+}
+
+.contact-form {
+  background: var(--glass-bg);
+  padding: 25px;
+  backdrop-filter: blur(var(--glass-blur));
+  border-radius: 18px;
+  box-shadow: 0px 0px 20px rgba(138, 43, 226, 0.3);
+  width: 350px;
   text-align: center;
-  max-width: 400px;
-  margin: auto;
-  animation: glitch 0.5s infinite alternate;
+  transition: all 0.3s ease-in-out;
+  border: 2px solid transparent;
+}
+
+.contact-form:hover {
+  border-color: var(--primary-accent);
+  box-shadow: 0px 0px 15px var(--secondary-accent);
 }
 
 h2 {
-  color: var(--primary-text-color);
+  color: var(--primary-accent);
+  text-shadow: 0 0 10px var(--secondary-accent);
+  font-weight: bold;
 }
 
 input, textarea {
   width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  border: 2px solid var(--secondary-accent-color);
-  background: transparent;
-  color: var(--primary-text-color);
-  font-size: 18px;
-  animation: flicker 0.8s infinite alternate;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--text-color);
+  font-size: 16px;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  outline: none;
+  transition: 0.3s ease-in-out;
+  margin-bottom: 15px;
+}
+
+input:focus, textarea:focus {
+  border-color: var(--secondary-accent);
+  box-shadow: 0 0 10px var(--secondary-accent);
 }
 
 textarea {
@@ -37,49 +62,29 @@ textarea {
 }
 
 button {
-  font-size: 20px;
-  font-weight: bold;
-  text-transform: uppercase;
-  padding: 10px 20px;
-  background: transparent;
-  border: 3px solid var(--primary-accent-color);
-  color: var(--primary-text-color);
+  font-size: 18px;
+  padding: 12px;
+  background: var(--primary-accent);
+  border: none;
+  color: white;
   cursor: pointer;
-  animation: shake 0.3s infinite alternate, neonGlow 1.5s infinite alternate;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 0px 10px var(--secondary-accent);
 }
 
 button:hover {
-  transform: scale(1.1) rotate(-3deg);
-  border-color: var(--secondary-accent-color);
-  box-shadow: 0 0 20px var(--glow-color);
+  background: var(--secondary-accent);
+  box-shadow: 0px 0px 15px white;
 }
 
-.submitted-message {
-  background: green;
+.submitted-popup {
+  background: #00cc00;
   color: white;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: bold;
-  padding: 20px;
-  box-shadow: 0 0 20px white;
-  border-radius: 10px;
+  padding: 15px;
+  border-radius: 12px;
+  text-shadow: 0 0 10px white;
+  box-shadow: 0px 0px 20px rgba(0, 255, 0, 0.5);
 }
-
-@keyframes flicker {
-  0% { opacity: 0.7; }
-  100% { opacity: 1; }
-}
-
-@keyframes shake {
-  0% { transform: translateX(-3px) rotate(-1deg); }
-  100% { transform: translateX(3px) rotate(1deg); }
-}
-
-@keyframes glitch {
-  0% { box-shadow: 5px 5px 10px var(--primary-accent-color); }
-  100% { box-shadow: -5px -5px 10px var(--secondary-accent-color); }
-}
-
-@keyframes neonGlow {
-  0% { text-shadow: 0 0 5px var(--primary-accent-color); }
-  100% { text-shadow: 0 0 15px var(--secondary-accent-color); }
-  }
