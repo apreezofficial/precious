@@ -58,7 +58,7 @@ const ContactForm = () => {
           transition={{ duration: 0.5, ease: "easeOut" }}
           onSubmit={handleSubmit}
         >
-          <h2>💬 Drop a Message 💬</h2>
+          <h2>Drop a Message</h2>
 
           <motion.input
             type="text"
