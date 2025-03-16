@@ -106,7 +106,7 @@ export default function Page() {
 
       {/* Projects Section */}
       <section className="projects">
-        <h2>Projects</h2>
+        <h2 className="text-white">Projects</h2>
         <div className="underline"></div>
         <div className="projects-container">
           {[
@@ -146,7 +146,7 @@ export default function Page() {
       </section>
 
       {/* Testimonials */}
-      <center><h2>Testimonials</h2></center>
+      <center><h2 className="text-white">Testimonials</h2></center>
       <p className="text-center"><i>What they are saying about me</i></p>
       <Testimonials />
       <ContactForm />
