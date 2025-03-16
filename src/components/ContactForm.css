@@ -27,7 +27,6 @@
 }
 h2 {
   color: white;
-  text-shadow: 0 0 10px var(--secondary-accent);
   font-weight: bold;
 }
 
