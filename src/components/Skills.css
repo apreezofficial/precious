@@ -1,0 +1,101 @@
+:root {
+  --background-color: #0d0d0d;
+  --primary-text-color: #eaeaea;
+  --secondary-text-color: #a1a1a1;
+  --primary-accent-color: #8a2be2;
+  --secondary-accent-color: #ff6b00;
+  --icon-border-color: #6f42c1;
+}
+
+/* Section Styles */
+.skills-section {
+  padding: 4rem 1rem;
+  background-color: var(--background-color);
+  color: var(--primary-text-color);
+  text-align: center;
+}
+
+.skills-title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: var(--secondary-accent-color);
+  font-family: "Orbitron", sans-serif;
+  text-shadow: 0 0 10px var(--secondary-accent-color), 0 0 20px var(--secondary-accent-color);
+}
+
+.skills-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.skill-category {
+  margin-bottom: 3rem;
+}
+
+.category-title {
+  font-size: 1.8rem;
+  color: var(--primary-accent-color);
+  margin-bottom: 1.5rem;
+  font-family: "Orbitron", sans-serif;
+  text-shadow: 0 0 10px var(--primary-accent-color), 0 0 20px var(--primary-accent-color);
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.skill-card {
+  background: #1a1a1a;
+  border: 2px solid var(--primary-accent-color);
+  border-radius: 10px;
+  padding: 1.5rem;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.skill-card.slide-up {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.skill-card:hover {
+  border-color: var(--secondary-accent-color);
+  box-shadow: 0 0 10px var(--secondary-accent-color), 0 0 20px var(--secondary-accent-color);
+  transform: translateY(-5px);
+}
+
+.skill-name {
+  font-size: 1.2rem;
+  color: var(--primary-text-color);
+  font-family: "Orbitron", sans-serif;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-title {
+    font-size: 2rem;
+  }
+
+  .category-title {
+    font-size: 1.5rem;
+  }
+
+  .skill-name {
+    font-size: 1rem;
+  }
+}
