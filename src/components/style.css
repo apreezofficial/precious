@@ -170,7 +170,7 @@ h1 {
     padding: 15px 30px;
     border: 3px solid var(--primary-accent-color);
     background: transparent;
-    color: var(--primary-text-color);
+    color: white;
     overflow: hidden;
     cursor: pointer;
     transition: 0.3s;
@@ -178,14 +178,14 @@ h1 {
 }
 
 #resume-btn::before {
-    content: "Download My Resume";
+    content: "Download Resume";
     position: absolute;
     top: 0;
     left: -2px;
     width: 100%;
     height: 100%;
     background: transparent;
-    color: var(--secondary-accent-color);
+    color: white;
     text-shadow: 2px 2px 10px var(--secondary-accent-color);
     clip-path: inset(40% 0 60% 0);
     animation: glitch-anim 0.3s infinite alternate;
@@ -203,7 +203,10 @@ h1 {
     background: var(--primary-accent-color);
     color: black;
 }
-
+#resume-btn a{
+ color:white;
+ text-decoration: none;
+}
 @keyframes flicker {
   0% { opacity: 0.7; }
   100% { opacity: 1; }
