@@ -1,32 +1,38 @@
-/* General Styles */
-body {
-  background-color: #0a0a0a;
-  color: #ffffff;
-  font-family: "Roboto", sans-serif;
-  overflow-x: hidden;
+:root {
+  --background-color: #0d0d0d;
+  --primary-text-color: #eaeaea;
+  --secondary-text-color: #a1a1a1;
+  --primary-accent-color: #8a2be2;
+  --secondary-accent-color: #ff6b00;
+  --icon-border-color: #6f42c1;
 }
 
+/* General Styles */
 .journey-container {
   display: flex;
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
   position: relative;
+  background-color: var(--background-color);
+  color: var(--primary-text-color);
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
 }
 
 /* Timeline Styles */
 .timeline {
   position: relative;
   width: 10px;
-  background: linear-gradient(to bottom, #6b00b3, #00d1ff);
+  background: linear-gradient(to bottom, var(--primary-accent-color), var(--secondary-accent-color));
   margin-right: 2rem;
 }
 
 .timeline-node {
   width: 20px;
   height: 20px;
-  background: #6b00b3;
-  border: 3px solid #00d1ff;
+  background: var(--primary-accent-color);
+  border: 3px solid var(--secondary-accent-color);
   border-radius: 50%;
   position: absolute;
   left: -5px;
@@ -35,13 +41,13 @@ body {
 
 @keyframes pulse {
   0% {
-    box-shadow: 0 0 0 0 rgba(107, 0, 179, 0.7);
+    box-shadow: 0 0 0 0 rgba(138, 43, 226, 0.7);
   }
   70% {
-    box-shadow: 0 0 0 10px rgba(107, 0, 179, 0);
+    box-shadow: 0 0 0 10px rgba(138, 43, 226, 0);
   }
   100% {
-    box-shadow: 0 0 0 0 rgba(107, 0, 179, 0);
+    box-shadow: 0 0 0 0 rgba(138, 43, 226, 0);
   }
 }
 
@@ -52,7 +58,7 @@ body {
 
 .role-card {
   background: #1a1a1a;
-  border: 1px solid #6b00b3;
+  border: 1px solid var(--primary-accent-color);
   border-radius: 10px;
   padding: 1.5rem;
   margin-bottom: 2rem;
@@ -69,27 +75,27 @@ body {
 
 .role-card:hover {
   transform: translateY(-10px) scale(1.02);
-  box-shadow: 0 0 20px rgba(107, 0, 179, 0.5), 0 0 40px rgba(0, 209, 255, 0.3);
+  box-shadow: 0 0 20px rgba(138, 43, 226, 0.5), 0 0 40px rgba(255, 107, 0, 0.3);
 }
 
 .role-title {
   font-size: 1.8rem;
   font-weight: bold;
-  color: #00d1ff;
-  text-shadow: 0 0 10px #00d1ff, 0 0 20px #00d1ff;
+  color: var(--secondary-accent-color);
+  text-shadow: 0 0 10px var(--secondary-accent-color), 0 0 20px var(--secondary-accent-color);
   margin-bottom: 0.5rem;
 }
 
 .company-name {
   font-size: 1.4rem;
-  color: #6b00b3;
-  text-shadow: 0 0 10px #6b00b3, 0 0 20px #6b00b3;
+  color: var(--primary-accent-color);
+  text-shadow: 0 0 10px var(--primary-accent-color), 0 0 20px var(--primary-accent-color);
   margin-bottom: 0.5rem;
 }
 
 .work-mode {
   font-size: 1rem;
-  color: #cccccc;
+  color: var(--secondary-text-color);
   margin-bottom: 1rem;
 }
 
@@ -107,7 +113,7 @@ body {
 
 .achievement::before {
   content: "•";
-  color: #00d1ff;
+  color: var(--secondary-accent-color);
   font-size: 1.5rem;
   position: absolute;
   left: 0;
@@ -130,6 +136,7 @@ body {
   .journey-container {
     flex-direction: column;
     align-items: center;
+    padding: 1rem;
   }
 
   .timeline {
@@ -137,6 +144,7 @@ body {
     height: 10px;
     margin-right: 0;
     margin-bottom: 2rem;
+    background: linear-gradient(to right, var(--primary-accent-color), var(--secondary-accent-color));
   }
 
   .timeline-node {
@@ -145,6 +153,7 @@ body {
   }
 
   .role-card {
+    width: 100%;
     transform: translateX(-100%);
   }
 
@@ -152,3 +161,21 @@ body {
     transform: translateX(0);
   }
 }
+
+@media (max-width: 480px) {
+  .role-title {
+    font-size: 1.5rem;
+  }
+
+  .company-name {
+    font-size: 1.2rem;
+  }
+
+  .work-mode {
+    font-size: 0.9rem;
+  }
+
+  .achievement {
+    font-size: 0.9rem;
+  }
+  }
