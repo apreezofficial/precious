@@ -154,6 +154,7 @@ export default function Page() {
       <ContactForm />
       <center><h2 className="text-white">My Journey</h2></center>
       <Journey />
+      <Footer />
     </>
   );
 }
