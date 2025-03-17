@@ -152,7 +152,7 @@
   }
 
   .role-card {
-    width: 100%;
+    width: 80%;
     transform: translateX(0); /* Changed from -100% to 0 */
   }
 
