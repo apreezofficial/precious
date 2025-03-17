@@ -1,1 +1,122 @@
 
+:root {
+  --background-color: #0d0d0d;
+  --primary-text-color: #eaeaea;
+  --secondary-text-color: #a1a1a1;
+  --primary-accent-color: #8a2be2;
+  --secondary-accent-color: #ff6b00;
+  --icon-border-color: #6f42c1;
+}
+
+/* Container Styles */
+.testbutt-container {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.testbutt-text {
+  font-size: 1.2rem;
+  color: var(--primary-text-color);
+}
+
+.testbutt-link {
+  color: var(--secondary-accent-color);
+  cursor: pointer;
+  text-decoration: underline;
+  transition: all 0.3s ease;
+}
+
+.testbutt-link:hover {
+  color: var(--primary-accent-color);
+  text-shadow: 0 0 10px var(--secondary-accent-color), 0 0 20px var(--secondary-accent-color);
+}
+
+/* Popup Styles */
+.testbutt-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.testbutt-popup-content {
+  background: var(--background-color);
+  padding: 2rem;
+  border-radius: 10px;
+  border: 1px solid var(--primary-accent-color);
+  box-shadow: 0 0 20px rgba(138, 43, 226, 0.5);
+  max-width: 500px;
+  width: 90%;
+}
+
+.testbutt-popup-title {
+  font-size: 1.5rem;
+  color: var(--secondary-accent-color);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.testbutt-form-group {
+  margin-bottom: 1rem;
+}
+
+.testbutt-form-group label {
+  display: block;
+  font-size: 1rem;
+  color: var(--primary-text-color);
+  margin-bottom: 0.5rem;
+}
+
+.testbutt-form-group input,
+.testbutt-form-group textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid var(--primary-accent-color);
+  border-radius: 5px;
+  background: #1a1a1a;
+  color: var(--primary-text-color);
+  font-size: 1rem;
+}
+
+.testbutt-form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.testbutt-submit-btn,
+.testbutt-close-btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.testbutt-submit-btn {
+  background: var(--secondary-accent-color);
+  color: var(--background-color);
+}
+
+.testbutt-submit-btn:hover {
+  background: var(--primary-accent-color);
+  box-shadow: 0 0 10px var(--secondary-accent-color), 0 0 20px var(--secondary-accent-color);
+}
+
+.testbutt-close-btn {
+  background: var(--primary-accent-color);
+  color: var(--primary-text-color);
+}
+
+.testbutt-close-btn:hover {
+  background: var(--secondary-accent-color);
+  box-shadow: 0 0 10px var(--primary-accent-color), 0 0 20px var(--primary-accent-color);
+  }
