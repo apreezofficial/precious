@@ -3,18 +3,18 @@ import "./Footer.css";
 
 const Footer = () => {
   const socialLinks = [
-    { name: "GitHub", url: "https://github.com", icon: "fab fa-github" },
-    { name: "LinkedIn", url: "https://linkedin.com", icon: "fab fa-linkedin" },
-    { name: "Twitter", url: "https://twitter.com", icon: "fab fa-twitter" },
-    { name: "Instagram", url: "https://instagram.com", icon: "fab fa-instagram" },
-    { name: "Dribbble", url: "https://dribbble.com", icon: "fab fa-dribbble" },
+    { name: "GitHub", url: "https://github.com/apreezofficial", icon: "fab fa-github" },
+    { name: "Tiktok", url: "https://tiktok.com/@apcodesphere", icon: "fab fa-tiktok" },
+    { name: "X", url: "https://x.com/apcodesphere", icon: "fab fa-x" },
+    { name: "Instagram", url: "https://instagram.com/apcodesphere", icon: "fab fa-instagram" },
+    { name: "Youtube", url: "https://youtube.com/@apcodesphere", icon: "fab fa-youtube" },
   ];
 
   return (
     <footer className="footer">
       <div className="footer-content">
         <p className="copyright">
-          &copy; {new Date().getFullYear()} Your Name. All Rights Reserved.
+          &copy; {new Date().getFullYear()} Apcodesphere. All Rights Reserved.
         </p>
         <div className="social-icons">
           {socialLinks.map((social, index) => (
