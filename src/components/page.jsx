@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'; // Framer Motion for animations
 import './style.css';
 import Globe from './globe';
 import Testimonials from './testimonials';
-import Mymg from './pic.jpg';
+import Mymg from './src/components/Screenshot_2025-03-12-09-37-35-88_e5d3893ac03954c6bb675ef2555b879b (1).jpg';
 import ContactForm from './ContactForm';
 import Journey from './journey';
 import Footer from './footer';
