@@ -1,0 +1,59 @@
+﻿
+Precious Adedokun
+
+Full-Stack Developer | Cybersecurity Teacher | Tech Mentor
+📍 Location: Born in Oyo State, Nigeria | Currently residing in Ekiti State, Nigeria
+📞 Phone: +2349064779856
+✉️ Email: apreezofficial@gmail.com
+🌐 GitHub: github.com/apreezofficial
+🔗 LinkedIn: linkedin.com/in/apcodesphere
+🔗 Twitter (X): twitter.com/apcodesphere
+
+
+---
+
+Professional Summary
+
+Passionate full-stack developer with expertise in PHP, MySQL, React.js, Angular, and Vue.js, specializing in building secure, scalable applications. Experienced in web development, cybersecurity education, and mentorship. Dedicated to empowering others through teaching and training programs.
+
+
+---
+
+Skills
+
+Programming: PHP, MySQL, React.js, Angular, Vue.js, Flutter, Python (Django)
+
+Cybersecurity: Security best practices, Ethical hacking, Cybersecurity training
+
+Web Development: Frontend & Backend development, API design
+
+Tools & Platforms: GitHub, Termux, WordPress, Linux, Firebase
+
+Soft Skills: Problem-solving, Communication, Mentorship
+---
+Work Experience
+Freelancer | 2023 – Present
+Developed secure and scalable web applications for various clients.
+Provided cybersecurity training and consultancy services.
+Mentored aspiring developers in full-stack development and cybersecurity.
+Built and maintained multiple projects, including a URL shortener and a mobile data sales platform.
+---
+Education & Certifications
+🎓 Shepherd International College – 2019 – 2024
+📜 Full-Stack Developer Certification – Udemy, 2024
+📜 Cybersecurity Certification – Udemy, 2025
+---
+Projects
+
+🔗 URL Shortener – Built with PHP, MySQL, and React.js for monetization.
+🔗 Cybersecurity Course – Developed a training program with certification.
+🔗 Front-End Development Projects – Built modern UI/UX interfaces using React.js, Angular, and Vue.js.
+🔗 Cybersecurity Training Program – Designed and delivered security awareness courses with certification.
+🔗 APQuotes Hub – A platform for sharing and discovering inspiring quotes.
+🔗 AP-EDU Site – An educational platform for learning and mentorship.
+🔗 APGame Zone – A gaming platform for interactive and engaging experiences.
+🔗 AP Sports – A sports-focused platform for updates, news, and analytics.
+🔗 APCal App – A calculator application for performing advanced and basic calculations.
+🔗Real time Intrusion System - An advanced intrusion detection system app built with Python.
+
+
