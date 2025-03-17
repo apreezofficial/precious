@@ -5,7 +5,7 @@ import Globe from './globe';
 import Testimonials from './testimonials';
 import Mymg from './pic.jpg';
 import ContactForm from './ContactForm';
-import Journey from './Journey';
+import Journey from './journey';
 
 // Scroll Animation Component
 const ScrollAnimation = ({ children, delay = 0 }) => {
