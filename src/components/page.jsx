@@ -7,6 +7,7 @@ import Mymg from './pic.jpg';
 import ContactForm from './ContactForm';
 import Journey from './journey';
 import Footer from './footer';
+import Testbutt from './Testbutt';
 
 // Scroll Animation Component
 const ScrollAnimation = ({ children, delay = 0 }) => {
@@ -152,7 +153,7 @@ export default function Page() {
       <center><h2 className="text-white">Testimonials</h2></center>
       <p className="text-center"><i>What they are saying about me</i></p>
       <Testimonials />
-      <button>Add your Testimony about me</button>
+      <Testbutt />
       <ContactForm />
       <center><h2 className="text-white">My Journey</h2></center>
       <Journey />
