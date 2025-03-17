@@ -3,7 +3,7 @@ import "./Skills.css";
 
 const Skills = () => {
   const skillsData = {
-    languages: [
+    "Programming Languages": [
       "JavaScript",
       "Python",
       "Java",
@@ -12,14 +12,13 @@ const Skills = () => {
       "Go",
       "Rust",
       "Kotlin",
-      "Vue",
-      "Angular",
       "HTML",
+      "CSS",
     ],
-    frameworks: ["React", "Node.js", "Django"],
-    libraries: ["Redux", "Axios", "Three.js"],
-    uiuxTools: ["Figma", "Adobe XD", "Sketch"],
-    dbTools: ["MySQL", "MongoDB"],
+    Frameworks: ["React", "Vue", "Angular", "Node.js", "Django", "Spring Boot"],
+    Libraries: ["Redux", "Axios", "Three.js", "TensorFlow", "Pandas", "NumPy"],
+    "UI/UX Tools": ["Figma", "Adobe XD", "Sketch", "InVision", "Zeplin", "Framer"],
+    "Database Tools": ["MySQL", "MongoDB", "PostgreSQL", "Firebase", "Redis", "Elasticsearch"],
   };
 
   const skillRefs = useRef([]);
