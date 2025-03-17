@@ -11,13 +11,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: fit-content;
   background: transparent;
 }
 
 .contact-form {
   background: transparent;
-  padding: 25px;
+  padding: 5px;
   backdrop-filter: blur(var(--glass-blur));
   border-radius: 18px;
   width: 350px;
