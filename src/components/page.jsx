@@ -50,8 +50,9 @@ export default function Page() {
           </p>
           <p>I build reliable and scalable solutions with smooth user interactions.</p>
           <p>An upcoming tech content creator and speaker.</p>
-            <button id="resume-btn"><a href="./Resume.txt" download="resume.txt">Download Resume</a></button>
-        </div>
+    <a href="./Resume.txt" download="resume.txt">
+  <button id="resume-btn">Download Resume</button>
+</a>    </div>
         <div className="profile-pic">
           <img src={Mymg} alt="Profile" />
         </div>
