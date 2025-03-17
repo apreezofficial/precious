@@ -46,7 +46,7 @@ export default function Page() {
             <span>Innovative</span> Code Developer
           </h1>
           <p>
-            I'm Precious Adedokun, alias APCodeSphere, a Full Stack Developer with years of experience. I started robotics in 2018 and web development in 2023.
+            I'm Precious Adedokun, alias APCodeSphere, a Full Stack Developer with years of experience , Over 6 years in Robotics and over 3 years in Website, App and Game Development .
           </p>
           <p>I build reliable and scalable solutions with smooth user interactions.</p>
           <p>An upcoming tech content creator and speaker.</p>
@@ -116,10 +116,10 @@ export default function Page() {
             { title: 'AP-AI', link: 'https://ap-ai.vercel.app/', description: 'A modern and feature-rich platform designed for seamless AI-powered interactions, offering smart automation and intelligent responses for businesses and individuals.', icons: ['fa-brands fa-vuejs', 'fa-brands fa-css3-alt', 'fa-brands fa-js', 'fa-brands fa-php', 'fa-solid fa-cloud'] },
             { title: 'Restaurant Site', link: 'https://sausyfoods.vercel.app', description: 'A sleek and user-friendly restaurant website that highlights the menu, reservations, online orders, and customer reviews, ensuring a delightful dining experience.', icons: ['fa-brands fa-html5', 'fa-brands fa-css3-alt', 'fa-brands fa-js'] },
                { title: 'Apgrico', link: 'https://apgrico.vercel.app', description: 'A smart calendar app for organizing tasks and events.', icons: ['fa-brands fa-react', 'fa-brands fa-js', 'fa-solid fa-calendar'] },
-         { title: 'Shepherd College', link: 'https://shepherdhub.netlify.app', description: 'An educational platform for learning web development and cybersecurity.', icons: ['fa-brands fa-html5', 'fa-brands fa-css3-alt', 'fa-brands fa-js'] },
+         { title: 'Shepherd College', link: 'https://shepherdhub.netlify.app', description: 'An educational platform for learning and has more features for student ease of use.', icons: ['fa-brands fa-html5', 'fa-brands fa-css3-alt', 'fa-brands fa-js'] },
       { title: 'Tower Game', link: 'https://towerofbabelgame.vercel.app/', description: 'A captivating and immersive Game showcasing the legendary Tower of Hangbel, featuring its history, lore, and stunning visual elements.', icons: ['fa-solid fa-gamepad', 'fa-brands fa-vuejs', 'fa-brands fa-css3-alt', 'fa-brands fa-js', 'fa-solid fa-cloud'] },
             { title: 'Football Livescore Site', link: 'https://apsports.vercel.app', description: 'Live football scores, match updates, and news.', icons: ['fa-brands fa-php', 'fa-solid fa-plug', 'fa-brands fa-js'] },
-            { title: 'APGame Zone', link: 'https://apgamezone.vercel.app', description: 'A platform for interactive online games.', icons: ['fa-brands fa-react', 'fa-brands fa-js', 'fa-solid fa-gamepad'] },
+            { title: 'APGame Zone', link: '', description: 'A platform for interactive online games.', icons: ['fa-brands fa-react', 'fa-brands fa-js', 'fa-solid fa-gamepad'] },
             { title: 'Weather App', link: 'https://apweatherapp.vercel.app/', description: 'Real-time forecasts with location tracking and customizable themes.', icons: ['fa-brands fa-vuejs', 'fa-brands fa-css3-alt', 'fa-brands fa-js', 'fa-solid fa-cloud'] },
             { title: 'APCal App', link: 'https://apcal.vercel.app', description: 'A smart calendar app for organizing tasks and events.', icons: ['fa-brands fa-react', 'fa-brands fa-js', 'fa-solid fa-calendar'] },
           ].map((project, index) => (
@@ -139,7 +139,7 @@ export default function Page() {
                 </p>
                 <div className="project-icons">
                   {project.icons.map((icon, i) => (
-                    <i key={i} className={icon}></i>
+                    <center><i key={i} className={icon}></i></center>
                   ))}
                 </div>
               </div>
