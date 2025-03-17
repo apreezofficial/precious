@@ -6,6 +6,7 @@ import Testimonials from './testimonials';
 import Mymg from './pic.jpg';
 import ContactForm from './ContactForm';
 import Journey from './journey';
+import Footer from './footer';
 
 // Scroll Animation Component
 const ScrollAnimation = ({ children, delay = 0 }) => {
