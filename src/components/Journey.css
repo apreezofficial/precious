@@ -63,9 +63,8 @@
   padding: 1.5rem;
   margin-bottom: 2rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  opacity: 0;
-  transform: translateX(-100%);
-  transition: opacity 0.8s ease, transform 0.8s ease;
+  opacity: 1; /* Changed from 0 to 1 */
+  transform: translateX(0); /* Changed from -100% to 0 */
 }
 
 .role-card.slide-in {
@@ -154,7 +153,7 @@
 
   .role-card {
     width: 100%;
-    transform: translateX(-100%);
+    transform: translateX(0); /* Changed from -100% to 0 */
   }
 
   .role-card.slide-in {
@@ -178,4 +177,4 @@
   .achievement {
     font-size: 0.9rem;
   }
-  }
+}
