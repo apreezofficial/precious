@@ -5,6 +5,7 @@ import Globe from './globe';
 import Testimonials from './testimonials';
 import Mymg from './pic.jpg';
 import ContactForm from './ContactForm';
+import Journey from './Journey';
 
 // Scroll Animation Component
 const ScrollAnimation = ({ children, delay = 0 }) => {
@@ -150,6 +151,7 @@ export default function Page() {
       <p className="text-center"><i>What they are saying about me</i></p>
       <Testimonials />
       <ContactForm />
+      <Journey />
     </>
   );
 }
