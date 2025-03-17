@@ -5,9 +5,9 @@ const Journey = () => {
   const experiences = [
     {
       title: "Backend Sorcerer",
-      company: "Neonova Systems",
+      company: "SME MANAGEMENT SYSTEM",
       mode: "Remote",
-      timeframe: "Jan 2023 – Present",
+      timeframe: "Sept 2024 – Present",
       achievements: [
         "Architected a distributed microservices system handling 10M+ requests/day with 99.99% uptime.",
         "Optimized database queries, reducing latency by 40% and saving $200K annually in cloud costs.",
@@ -15,10 +15,10 @@ const Journey = () => {
       ],
     },
     {
-      title: "AI Engineer Supreme",
-      company: "NeuroForge Labs",
-      mode: "Hybrid",
-      timeframe: "Aug 2021 – Dec 2022",
+      title: "Backend Engineer",
+      company: "Boolen Builders",
+      mode: "Remote",
+      timeframe: "February 2025– Present",
       achievements: [
         "Developed a neural network for real-time fraud detection, achieving 98% accuracy.",
         "Spearheaded the integration of GPT-4 into customer support, reducing response time by 70%.",
@@ -28,8 +28,8 @@ const Journey = () => {
     {
       title: "Cybersecurity Sentinel",
       company: "CipherCore Solutions",
-      mode: "On-Site",
-      timeframe: "Mar 2020 – Jul 2021",
+      mode: "Intern",
+      timeframe: "Jan 2025 – Present",
       achievements: [
         "Deployed a zero-trust architecture, reducing security breaches by 90%.",
         "Led a team to develop an AI-powered threat detection system.",
@@ -40,7 +40,7 @@ const Journey = () => {
       title: "Full-Stack Wizard",
       company: "CodeHaven Technologies",
       mode: "Remote",
-      timeframe: "Jun 2018 – Feb 2020",
+      timeframe: "May 2023 – Feb 2024",
       achievements: [
         "Built a scalable SaaS platform serving 500K+ users with sub-100ms response times.",
         "Integrated blockchain for secure transactions, increasing user trust by 60%.",
@@ -49,9 +49,9 @@ const Journey = () => {
     },
     {
       title: "Software Architect",
-      company: "QuantumLeap Innovations",
-      mode: "On-Site",
-      timeframe: "Sep 2015 – May 2018",
+      company: "Upwork",
+      mode: "Remote",
+      timeframe: "Sep 2023 – May 2024",
       achievements: [
         "Designed a cloud-native architecture for a Fortune 500 company, reducing costs by 25%.",
         "Led the migration of legacy systems to Kubernetes, improving scalability.",
