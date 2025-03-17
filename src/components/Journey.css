@@ -1,0 +1,154 @@
+/* General Styles */
+body {
+  background-color: #0a0a0a;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+
+.journey-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  position: relative;
+}
+
+/* Timeline Styles */
+.timeline {
+  position: relative;
+  width: 10px;
+  background: linear-gradient(to bottom, #6b00b3, #00d1ff);
+  margin-right: 2rem;
+}
+
+.timeline-node {
+  width: 20px;
+  height: 20px;
+  background: #6b00b3;
+  border: 3px solid #00d1ff;
+  border-radius: 50%;
+  position: absolute;
+  left: -5px;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(107, 0, 179, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(107, 0, 179, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(107, 0, 179, 0);
+  }
+}
+
+/* Role Card Styles */
+.roles {
+  flex: 1;
+}
+
+.role-card {
+  background: #1a1a1a;
+  border: 1px solid #6b00b3;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.role-card.slide-in {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.role-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 0 20px rgba(107, 0, 179, 0.5), 0 0 40px rgba(0, 209, 255, 0.3);
+}
+
+.role-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #00d1ff;
+  text-shadow: 0 0 10px #00d1ff, 0 0 20px #00d1ff;
+  margin-bottom: 0.5rem;
+}
+
+.company-name {
+  font-size: 1.4rem;
+  color: #6b00b3;
+  text-shadow: 0 0 10px #6b00b3, 0 0 20px #6b00b3;
+  margin-bottom: 0.5rem;
+}
+
+.work-mode {
+  font-size: 1rem;
+  color: #cccccc;
+  margin-bottom: 1rem;
+}
+
+.achievements {
+  list-style: none;
+  padding: 0;
+}
+
+.achievement {
+  margin-bottom: 0.75rem;
+  padding-left: 1.5rem;
+  position: relative;
+  animation: slideIn 0.5s ease;
+}
+
+.achievement::before {
+  content: "•";
+  color: #00d1ff;
+  font-size: 1.5rem;
+  position: absolute;
+  left: 0;
+  top: -5px;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .journey-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .timeline {
+    width: 100%;
+    height: 10px;
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .timeline-node {
+    top: -5px;
+    left: calc((100% / 5) * index - 5px);
+  }
+
+  .role-card {
+    transform: translateX(-100%);
+  }
+
+  .role-card.slide-in {
+    transform: translateX(0);
+  }
+}
