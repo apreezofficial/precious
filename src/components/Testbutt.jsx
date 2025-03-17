@@ -19,7 +19,7 @@ const TestButt = () => {
     e.preventDefault();
 
     // Replace with your GetForm API endpoint
-    const GETFORM_API_URL = "YOUR_GETFORM_API_ENDPOINT_HERE";
+    const GETFORM_API_URL = "https://getform.io/f/bdrnqdnb";
 
     try {
       const response = await fetch(GETFORM_API_URL, {
