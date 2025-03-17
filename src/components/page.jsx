@@ -8,6 +8,7 @@ import ContactForm from './ContactForm';
 import Journey from './journey';
 import Footer from './footer';
 import TestButt from './Testbutt';
+import Skills from './Skills';
 
 // Scroll Animation Component
 const ScrollAnimation = ({ children, delay = 0 }) => {
@@ -154,6 +155,7 @@ export default function Page() {
       <p className="text-center"><i>What they are saying about me</i></p>
       <Testimonials />
       <TestButt />
+      <Skills />
       <ContactForm />
       <center><h2 className="text-white">My Journey</h2></center>
       <Journey />
