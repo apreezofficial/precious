@@ -6,7 +6,6 @@ function App() {
      <>
      <Navbar />
      <Page />
-<h1>Apreez</h1>
      </>   
   );
 }
