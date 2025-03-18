@@ -155,10 +155,15 @@ export default function Page() {
       <p className="text-center"><i>What they are saying about me</i></p>
       <Testimonials />
       <TestButt />
-      <Skills />
-      <ContactForm />
+      <center><h2 className="text-white">My Skills</h2></center>
+       <div className="underline"></div>
+       <Skills />
       <center><h2 className="text-white">My Journey</h2></center>
+        <div className="underline"></div>
       <Journey />
+      <center><h2 className="text-white">Contact Me</h2></center>
+        <div className="underline"></div>
+      <ContactForm />
       <Footer />
     </>
   );
