@@ -2,24 +2,35 @@ import React, { useEffect, useRef } from "react";
 import "./Skills.css";
 
 const Skills = () => {
-  const skillsData = {
-    "Programming Languages": [
-      "JavaScript",
-      "Python",
-      "Java",
-      "C++",
-      "TypeScript",
-      "Go",
-      "Rust",
-      "Kotlin",
-      "HTML",
-      "CSS",
-    ],
-    Frameworks: ["Vue", "Angular", "Node.js", "Django", "Spring Boot"],
-    Libraries: ["React", "Redux", "Axios", "Three.js", "TensorFlow", "Pandas", "NumPy"],
-    "UI/UX Tools": ["Figma", "Adobe XD", "Sketch", "InVision", "Zeplin", "Framer"],
-    "Database Tools": ["MySQL", "MongoDB", "PostgreSQL", "Firebase", "Redis", "Elasticsearch"],
-  };
+  const skills = [
+    "JavaScript",
+    "Python",
+    "Java",
+    "C++",
+    "TypeScript",
+    "Go",
+    "Rust",
+    "Kotlin",
+    "HTML",
+    "CSS",
+    "Vue",
+    "Angular",
+    "Node.js",
+    "Django",
+    "Spring Boot",
+    "React",
+    "Three.js",
+    "TensorFlow",
+    "Pandas",
+    "NumPy",
+    "Figma",
+    "Adobe XD",
+    "Framer",
+    "MySQL",
+    "MongoDB",
+    "PostgreSQL",
+    "Firebase",
+  ];
 
   const skillRefs = useRef([]);
 
@@ -53,22 +64,14 @@ const Skills = () => {
 
   return (
     <section className="skills-section">
-      <h2 className="skills-title">My Skills</h2>
-      <div className="skills-container">
-        {Object.entries(skillsData).map(([category, skills], index) => (
-          <div key={category} className="skill-category">
-            <h3 className="category-title">{category}</h3>
-            <div className="skills-grid">
-              {skills.map((skill, i) => (
-                <div
-                  key={skill}
-                  className="skill-card"
-                  ref={(el) => (skillRefs.current.push(el))} // Add ref to the array
-                >
-                  <p className="skill-name">{skill}</p>
-                </div>
-              ))}
-            </div>
+      <div className="skills-grid">
+        {skills.map((skill, i) => (
+          <div
+            key={skill}
+            className="skill-card"
+            ref={(el) => (skillRefs.current[i] = el)} // Add ref to the array
+          >
+            <p className="skill-name">{skill}</p>
           </div>
         ))}
       </div>
