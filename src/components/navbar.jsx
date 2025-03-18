@@ -9,7 +9,7 @@ export default function Navbar(){
     return (
 <>
 <div className="navbar">
-    <div href="" className='logotext'>Precious! ⚡</div>
+    <div className='logotext'>Precious! ⚡</div>
     <a href="https://github.com/apreezofficial" className='git' target='_blank'><i class="fab fa-github"></i> github</a>
 </div>
 </>
