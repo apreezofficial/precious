@@ -33,10 +33,9 @@
 
 .category-title {
   font-size: 1.8rem;
-  color: var(--primary-accent-color);
+  color: white;
   margin-bottom: 1.5rem;
   font-family: "Orbitron", sans-serif;
-  text-shadow: 0 0 10px var(--primary-accent-color), 0 0 20px var(--primary-accent-color);
 }
 
 .skills-grid {
