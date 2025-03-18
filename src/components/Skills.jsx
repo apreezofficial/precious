@@ -15,8 +15,8 @@ const Skills = () => {
       "HTML",
       "CSS",
     ],
-    Frameworks: ["React", "Vue", "Angular", "Node.js", "Django", "Spring Boot"],
-    Libraries: ["Redux", "Axios", "Three.js", "TensorFlow", "Pandas", "NumPy"],
+    Frameworks: ["Vue", "Angular", "Node.js", "Django", "Spring Boot"],
+    Libraries: ["React", "Redux", "Axios", "Three.js", "TensorFlow", "Pandas", "NumPy"],
     "UI/UX Tools": ["Figma", "Adobe XD", "Sketch", "InVision", "Zeplin", "Framer"],
     "Database Tools": ["MySQL", "MongoDB", "PostgreSQL", "Firebase", "Redis", "Elasticsearch"],
   };
