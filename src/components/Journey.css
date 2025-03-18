@@ -80,15 +80,13 @@
 .role-title {
   font-size: 1.8rem;
   font-weight: bold;
-  color: var(--secondary-accent-color);
-  text-shadow: 0 0 10px var(--secondary-accent-color), 0 0 20px var(--secondary-accent-color);
+  color: var(--primary-accent-color);
   margin-bottom: 0.5rem;
 }
 
 .company-name {
   font-size: 1.4rem;
   color: var(--primary-accent-color);
-  text-shadow: 0 0 10px var(--primary-accent-color), 0 0 20px var(--primary-accent-color);
   margin-bottom: 0.5rem;
 }
 
@@ -108,6 +106,7 @@
   padding-left: 1.5rem;
   position: relative;
   animation: slideIn 0.5s ease;
+  text-align: left;
 }
 
 .achievement::before {
