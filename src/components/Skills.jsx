@@ -3,7 +3,7 @@ import "./Skills.css";
 
 const Skills = () => {
   const skillsData = {
-    Programming Languages: [
+    "Programming Languages": [
       "JavaScript",
       "Python",
       "Java",
@@ -15,13 +15,13 @@ const Skills = () => {
       "HTML",
       "CSS",
     ],
-    Frameworks: ["Vue", "Angular", "Node.js", "Django", "Spring Boot"],
-    Libraries: ["React", "Redux", "Axios", "Three.js", "TensorFlow", "Pandas", "NumPy"],
-    UI/UX Tools: ["Figma", "Adobe XD", "Sketch", "InVision", "Zeplin", "Framer"],
-    Database Tools: ["MySQL", "MongoDB", "PostgreSQL", "Firebase", "Redis", "Elasticsearch"],
+    Frameworks: ["React", "Vue", "Angular", "Node.js", "Django", "Spring Boot"],
+    Libraries: ["Redux", "Axios", "Three.js", "TensorFlow", "Pandas", "NumPy"],
+    "UI/UX Tools": ["Figma", "Adobe XD", "Sketch", "InVision", "Zeplin", "Framer"],
+    "Database Tools": ["MySQL", "MongoDB", "PostgreSQL", "Firebase", "Redis", "Elasticsearch"],
   };
 
-  const skillRefs = useRef({}); // Use an object instead of an array
+  const skillRefs = useRef([]);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -29,24 +29,23 @@ const Skills = () => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add("slide-up");
-            observer.unobserve(entry.target);
+            observer.unobserve(entry.target); // Stop observing after animation
           }
         });
       },
       {
-        threshold: 0.1,
-        rootMargin: "0px 0px -50px 0px",
+        threshold: 0.1, // Trigger when 10% of the element is visible
       }
     );
 
-    // Observe all refs
-    Object.values(skillRefs.current).forEach((ref) => {
+    // Observe all skill cards
+    skillRefs.current.forEach((ref) => {
       if (ref) observer.observe(ref);
     });
 
+    // Cleanup observer on unmount
     return () => {
-      // Unobserve all refs on cleanup
-      Object.values(skillRefs.current).forEach((ref) => {
+      skillRefs.current.forEach((ref) => {
         if (ref) observer.unobserve(ref);
       });
     };
@@ -57,14 +56,14 @@ const Skills = () => {
       <h2 className="skills-title">My Skills</h2>
       <div className="skills-container">
         {Object.entries(skillsData).map(([category, skills], index) => (
-          <div key={index} className="skill-category">
+          <div key={category} className="skill-category">
             <h3 className="category-title">{category}</h3>
             <div className="skills-grid">
               {skills.map((skill, i) => (
                 <div
-                  key={i}
+                  key={skill}
                   className="skill-card"
-                  ref={(el) => (skillRefs.current[`${category}-${skill}`] = el)} // Use a unique key
+                  ref={(el) => (skillRefs.current.push(el))} // Add ref to the array
                 >
                   <p className="skill-name">{skill}</p>
                 </div>
