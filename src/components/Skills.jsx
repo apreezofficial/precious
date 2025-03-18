@@ -3,7 +3,7 @@ import "./Skills.css";
 
 const Skills = () => {
   const skillsData = {
-    "Programming Languages": [
+    Programming Languages: [
       "JavaScript",
       "Python",
       "Java",
@@ -15,13 +15,13 @@ const Skills = () => {
       "HTML",
       "CSS",
     ],
-    Frameworks: ["React", "Vue", "Angular", "Node.js", "Django", "Spring Boot"],
-    Libraries: ["Redux", "Axios", "Three.js", "TensorFlow", "Pandas", "NumPy"],
-    "UI/UX Tools": ["Figma", "Adobe XD", "Sketch", "InVision", "Zeplin", "Framer"],
-    "Database Tools": ["MySQL", "MongoDB", "PostgreSQL", "Firebase", "Redis", "Elasticsearch"],
+    Frameworks: ["Vue", "Angular", "Node.js", "Django", "Spring Boot"],
+    Libraries: ["React", "Redux", "Axios", "Three.js", "TensorFlow", "Pandas", "NumPy"],
+    UI/UX Tools: ["Figma", "Adobe XD", "Sketch", "InVision", "Zeplin", "Framer"],
+    Database Tools: ["MySQL", "MongoDB", "PostgreSQL", "Firebase", "Redis", "Elasticsearch"],
   };
 
-  const skillRefs = useRef([]);
+  const skillRefs = useRef({}); // Use an object instead of an array
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -39,12 +39,14 @@ const Skills = () => {
       }
     );
 
-    skillRefs.current.forEach((ref) => {
+    // Observe all refs
+    Object.values(skillRefs.current).forEach((ref) => {
       if (ref) observer.observe(ref);
     });
 
     return () => {
-      skillRefs.current.forEach((ref) => {
+      // Unobserve all refs on cleanup
+      Object.values(skillRefs.current).forEach((ref) => {
         if (ref) observer.unobserve(ref);
       });
     };
@@ -62,7 +64,7 @@ const Skills = () => {
                 <div
                   key={i}
                   className="skill-card"
-                  ref={(el) => (skillRefs.current[index * skills.length + i] = el)}
+                  ref={(el) => (skillRefs.current[`${category}-${skill}`] = el)} // Use a unique key
                 >
                   <p className="skill-name">{skill}</p>
                 </div>
