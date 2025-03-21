@@ -39,7 +39,7 @@ const MusicPlayer = () => {
     >
       <audio
         ref={audioRef}
-        src="https://www.gospelsongsmp3.org.ng/wp-content/plugins/download-attachments/includes/download.php?id=17969"
+        src="../assets/Ogayoloo-by-Dr-Paul-Enenche.mp3"
       />
       <motion.button
         className="play-btn"
