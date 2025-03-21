@@ -1,88 +1,60 @@
 /* General Styles */
 .music-player {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: #000; /* Black background */
-  color: #eee; /* White text */
-  padding: 10px 20px;
-  border-radius: 10px;
-  width: 100%;
-  max-width: 400px;
-  box-shadow: 0 4px 10px rgba(138, 43, 226, 0.5);
   position: fixed;
   bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  transition: all 0.3s ease-in-out;
+  left: 20px;
+  width: 80px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.1); /* Glass effect */
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 30px rgba(138, 43, 226, 0.4);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  cursor: grab;
+  overflow: hidden;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.music-player:active {
+  cursor: grabbing;
+}
+
+.music-player:hover {
+  transform: scale(1.1);
+  box-shadow: 0 15px 40px rgba(138, 43, 226, 0.6);
 }
 
 /* Play/Pause Button */
 .play-btn {
-  background: #8a2be2; /* Violet */
+  background: transparent;
   border: none;
-  color: white;
-  font-size: 18px;
-  padding: 10px;
-  border-radius: 50%;
+  color: #fff;
+  font-size: 26px;
   cursor: pointer;
-  box-shadow: 0 0 10px rgba(138, 43, 226, 0.8);
   transition: transform 0.2s ease-in-out;
 }
 
 .play-btn:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
-/* Track Info */
-.track-info {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  flex-grow: 1;
-  margin-left: 10px;
-}
-
-.track-title {
-  font-size: 14px;
-  font-weight: bold;
-  color: #fff;
-}
-
-/* Progress Bar */
-.progress-bar {
-  width: 100%;
-  height: 5px;
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 10px;
-  overflow: hidden;
-  margin-top: 5px;
-}
-
-.progress {
-  height: 100%;
-  background: #8a2be2;
-  transition: width 0.3s ease-in-out;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .music-player {
-    height: 30px;
-    max-width: 90%;
-    padding: 5px 15px;
+/* Animation for Play/Pause Icon */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 10px rgba(138, 43, 226, 0.4);
   }
-  .track-title {
-    font-size: 12px;
+  50% {
+    box-shadow: 0 0 20px rgba(138, 43, 226, 0.6);
   }
-  .play-btn {
-    font-size: 14px;
-    padding: 8px;
+  100% {
+    box-shadow: 0 0 10px rgba(138, 43, 226, 0.4);
   }
 }
 
-@media (min-width: 769px) {
-  .music-player {
-    height: 60px;
-  }
+.music-player.playing {
+  animation: pulse 2s infinite;
 }
