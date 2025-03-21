@@ -1,11 +1,9 @@
 import React from 'react'
-import MusicPlayer from './MusicPlayer'
 import './style.css'
 
 export default function Navbar() {
   return (
     <React.Fragment>
-      <MusicPlayer />
       <nav className="navbar">
         <div className="logotext">Precious! ⚡</div>
         <a href="https://github.com/apreezofficial" className="git" target="_blank" rel="noopener noreferrer">
