@@ -2,21 +2,21 @@
 .music-player {
   position: fixed;
   bottom: 20px;
-  left: 20px;
+  right: 20px; /* Moved to bottom right */
   width: 80px;
   height: 80px;
-  background: rgba(255, 255, 255, 0.1); /* Glass effect */
-  backdrop-filter: blur(15px);
-  -webkit-backdrop-filter: blur(15px);
+  background: rgba(138, 43, 226, 0.3); /* Violet Glass Effect */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 10px 30px rgba(138, 43, 226, 0.4);
+  box-shadow: 0 10px 30px rgba(138, 43, 226, 0.6);
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   cursor: grab;
   overflow: hidden;
-  border: 2px solid rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(138, 43, 226, 0.8);
 }
 
 .music-player:active {
@@ -25,14 +25,14 @@
 
 .music-player:hover {
   transform: scale(1.1);
-  box-shadow: 0 15px 40px rgba(138, 43, 226, 0.6);
+  box-shadow: 0 15px 40px rgba(138, 43, 226, 0.8);
 }
 
 /* Play/Pause Button */
 .play-btn {
   background: transparent;
   border: none;
-  color: #fff;
+  color: white;
   font-size: 26px;
   cursor: pointer;
   transition: transform 0.2s ease-in-out;
@@ -49,16 +49,16 @@
 /* Animation for Play/Pause Icon */
 @keyframes pulse {
   0% {
-    box-shadow: 0 0 10px rgba(138, 43, 226, 0.4);
+    box-shadow: 0 0 10px rgba(138, 43, 226, 0.6);
   }
   50% {
-    box-shadow: 0 0 20px rgba(138, 43, 226, 0.6);
+    box-shadow: 0 0 20px rgba(138, 43, 226, 0.8);
   }
   100% {
-    box-shadow: 0 0 10px rgba(138, 43, 226, 0.4);
+    box-shadow: 0 0 10px rgba(138, 43, 226, 0.6);
   }
 }
 
 .music-player.playing {
   animation: pulse 2s infinite;
-  }
+}
