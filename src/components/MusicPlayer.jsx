@@ -1,27 +1,26 @@
 import React, { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
-import song from "../assets/Ogayoloo-by-Dr-Paul-Enenche.mp3"; // Import your audio file
+import song from "../assets/Ogayoloo-by-Dr-Paul-Enenche.mp3"; // Import the MP3 file
 import "./MusicPlayer.css";
 
 const MusicPlayer = () => {
   const [isPlaying, setIsPlaying] = useState(false);
-  const audioRef = useRef(null);
+  const audioRef = useRef(new Audio(song)); // Create audio instance
 
   useEffect(() => {
     const audio = audioRef.current;
-    if (audio) {
-      setTimeout(() => {
-        audio.play()
-          .then(() => setIsPlaying(true))
-          .catch((err) => console.error("Autoplay failed:", err));
-      }, 2000); // Auto-play after 2 seconds
-    }
+    audio.load(); // Ensure audio is loaded
+    const playAfterDelay = setTimeout(() => {
+      audio.play()
+        .then(() => setIsPlaying(true))
+        .catch((err) => console.error("Autoplay blocked:", err));
+    }, 2000); // Play after 2s
+
+    return () => clearTimeout(playAfterDelay); // Cleanup on unmount
   }, []);
 
   const togglePlayPause = () => {
     const audio = audioRef.current;
-    if (!audio) return;
-
     if (isPlaying) {
       audio.pause();
     } else {
@@ -40,7 +39,6 @@ const MusicPlayer = () => {
       dragConstraints={{ left: -100, right: 100, top: -100, bottom: 100 }}
       whileDrag={{ scale: 1.1 }}
     >
-      <audio ref={audioRef} src={song} preload="auto" />
       <motion.button className="play-btn" whileTap={{ scale: 0.9 }} onClick={togglePlayPause}>
         <i className={isPlaying ? "fas fa-pause" : "fas fa-play"}></i>
       </motion.button>
