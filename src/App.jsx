@@ -1,7 +1,7 @@
 import './App.css';
 import Navbar from './components/navbar'
 import Page from './components/page'
-import MusicPlayer from './MusicPlayer'
+import MusicPlayer from './components/MusicPlayer'
 function App() {
   return (
      <>
