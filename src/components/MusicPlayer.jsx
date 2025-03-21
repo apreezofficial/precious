@@ -1,58 +1,62 @@
 import React, { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
+import { FaPlay, FaPause } from "react-icons/fa";
 import "./MusicPlayer.css";
 
 const MusicPlayer = () => {
-  const [isPlaying, setIsPlaying] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(true);
   const [progress, setProgress] = useState(0);
   const audioRef = useRef(null);
 
-  // Online music URL
-  const musicUrl = "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3";
-
   useEffect(() => {
-    audioRef.current = new Audio(musicUrl);
+    const audio = audioRef.current;
+    if (audio) {
+      audio.play(); // Autoplay when component loads
+    }
 
     const updateProgress = () => {
-      setProgress((audioRef.current.currentTime / audioRef.current.duration) * 100);
+      setProgress((audio.currentTime / audio.duration) * 100);
     };
 
-    audioRef.current.addEventListener("timeupdate", updateProgress);
-    
+    audio.addEventListener("timeupdate", updateProgress);
+
     return () => {
-      audioRef.current.removeEventListener("timeupdate", updateProgress);
-      audioRef.current.pause();
+      audio.removeEventListener("timeupdate", updateProgress);
     };
   }, []);
 
   const togglePlayPause = () => {
+    const audio = audioRef.current;
+    if (!audio) return;
     if (isPlaying) {
-      audioRef.current.pause();
+      audio.pause();
     } else {
-      audioRef.current.play();
+      audio.play();
     }
     setIsPlaying(!isPlaying);
   };
 
   return (
-    <motion.div 
+    <motion.div
       className="music-player"
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <motion.button 
-        onClick={togglePlayPause} 
+      <audio ref={audioRef} src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" autoPlay />
+
+      <motion.button
+        onClick={togglePlayPause}
         className="play-btn"
         whileTap={{ scale: 0.8 }}
       >
-        <i className={isPlaying ? "fas fa-pause" : "fas fa-play"}></i>
+        {isPlaying ? <FaPause /> : <FaPlay />}
       </motion.button>
-      
+
       <div className="track-info">
-        <span className="track-title">SoundHelix Song</span>
+        <span className="track-title">Now Playing: SoundHelix Track</span>
         <div className="progress-bar">
-          <motion.div 
+          <motion.div
             className="progress"
             style={{ width: `${progress}%` }}
             animate={{ width: `${progress}%` }}
