@@ -1,11 +1,6 @@
 import React from 'react';
 import MusicPlayer from './MusicPlayer'; // Ensure correct path
 import './style.css';
-
-function Alink({ text, link }) {
-  return <a href={link}>{text}</a>;
-}
-
 export default function Navbar() {
   return (
     <>
