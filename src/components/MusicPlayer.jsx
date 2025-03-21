@@ -1,6 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
-import { FaPlay, FaPause } from "react-icons/fa";
 import "./MusicPlayer.css";
 
 const MusicPlayer = ({ src, title }) => {
@@ -43,7 +42,7 @@ const MusicPlayer = ({ src, title }) => {
         className="play-btn"
         whileTap={{ scale: 0.8 }}
       >
-        {isPlaying ? <FaPause /> : <FaPlay />}
+        <i className={isPlaying ? "fas fa-pause" : "fas fa-play"}></i>
       </motion.button>
       
       <div className="track-info">
