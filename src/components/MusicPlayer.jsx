@@ -2,30 +2,34 @@ import React, { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import "./MusicPlayer.css";
 
-const MusicPlayer = ({ src, title }) => {
+const MusicPlayer = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [progress, setProgress] = useState(0);
-  const audioRef = useRef(new Audio(src));
+  const audioRef = useRef(null);
+
+  // Online music URL
+  const musicUrl = "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3";
 
   useEffect(() => {
-    const audio = audioRef.current;
+    audioRef.current = new Audio(musicUrl);
 
     const updateProgress = () => {
-      setProgress((audio.currentTime / audio.duration) * 100);
+      setProgress((audioRef.current.currentTime / audioRef.current.duration) * 100);
     };
 
-    audio.addEventListener("timeupdate", updateProgress);
+    audioRef.current.addEventListener("timeupdate", updateProgress);
+    
     return () => {
-      audio.removeEventListener("timeupdate", updateProgress);
+      audioRef.current.removeEventListener("timeupdate", updateProgress);
+      audioRef.current.pause();
     };
   }, []);
 
   const togglePlayPause = () => {
-    const audio = audioRef.current;
     if (isPlaying) {
-      audio.pause();
+      audioRef.current.pause();
     } else {
-      audio.play();
+      audioRef.current.play();
     }
     setIsPlaying(!isPlaying);
   };
@@ -46,7 +50,7 @@ const MusicPlayer = ({ src, title }) => {
       </motion.button>
       
       <div className="track-info">
-        <span className="track-title">{title}</span>
+        <span className="track-title">SoundHelix Song</span>
         <div className="progress-bar">
           <motion.div 
             className="progress"
