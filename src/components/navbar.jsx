@@ -1,6 +1,6 @@
-import React from 'react';
-import MusicPlayer from './MusicPlayer'; // Ensure correct path
-import './style.css';
+import React from 'react'
+import MusicPlayer from './MusicPlayer'
+import './style.css'
 
 export default function Navbar() {
   return (
