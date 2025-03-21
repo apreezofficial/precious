@@ -1,0 +1,64 @@
+/* General Styles */
+.music-player {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  width: 80px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.1); /* Glass effect */
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 30px rgba(138, 43, 226, 0.4);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  cursor: grab;
+  overflow: hidden;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.music-player:active {
+  cursor: grabbing;
+}
+
+.music-player:hover {
+  transform: scale(1.1);
+  box-shadow: 0 15px 40px rgba(138, 43, 226, 0.6);
+}
+
+/* Play/Pause Button */
+.play-btn {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 26px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.play-btn i {
+  color: white;
+}
+
+.play-btn:hover {
+  transform: scale(1.2);
+}
+
+/* Animation for Play/Pause Icon */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 10px rgba(138, 43, 226, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(138, 43, 226, 0.6);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(138, 43, 226, 0.4);
+  }
+}
+
+.music-player.playing {
+  animation: pulse 2s infinite;
+  }
