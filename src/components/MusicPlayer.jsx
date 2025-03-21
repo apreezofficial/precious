@@ -39,7 +39,7 @@ const MusicPlayer = () => {
     >
       <audio
         ref={audioRef}
-        src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+        src="https://www.gospelsongsmp3.org.ng/wp-content/plugins/download-attachments/includes/download.php?id=17969"
       />
       <motion.button
         className="play-btn"
