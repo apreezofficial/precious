@@ -3,13 +3,16 @@ import { motion } from "framer-motion";
 import "./MusicPlayer.css";
 
 const MusicPlayer = () => {
-  const [isPlaying, setIsPlaying] = useState(true);
+  const [isPlaying, setIsPlaying] = useState(false);
   const audioRef = useRef(null);
 
   useEffect(() => {
     const audio = audioRef.current;
     if (audio) {
-      audio.play();
+      setTimeout(() => {
+        audio.play();
+        setIsPlaying(true);
+      }, 2000); // Delays play for 2 seconds
     }
   }, []);
 
@@ -37,7 +40,6 @@ const MusicPlayer = () => {
       <audio
         ref={audioRef}
         src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-        autoPlay
       />
       <motion.button
         className="play-btn"
