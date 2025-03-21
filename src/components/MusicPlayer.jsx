@@ -12,7 +12,7 @@ const MusicPlayer = () => {
       setTimeout(() => {
         audio.play();
         setIsPlaying(true);
-      }, 2000); // Delays play for 2 seconds
+      }, 2000); // Auto-play after 2 seconds
     }
   }, []);
 
