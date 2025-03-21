@@ -1,28 +1,16 @@
 import React, { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
-import { FaPlay, FaPause } from "react-icons/fa";
 import "./MusicPlayer.css";
 
 const MusicPlayer = () => {
   const [isPlaying, setIsPlaying] = useState(true);
-  const [progress, setProgress] = useState(0);
   const audioRef = useRef(null);
 
   useEffect(() => {
     const audio = audioRef.current;
     if (audio) {
-      audio.play(); // Autoplay when component loads
+      audio.play();
     }
-
-    const updateProgress = () => {
-      setProgress((audio.currentTime / audio.duration) * 100);
-    };
-
-    audio.addEventListener("timeupdate", updateProgress);
-
-    return () => {
-      audio.removeEventListener("timeupdate", updateProgress);
-    };
   }, []);
 
   const togglePlayPause = () => {
@@ -38,32 +26,26 @@ const MusicPlayer = () => {
 
   return (
     <motion.div
-      className="music-player"
-      initial={{ opacity: 0, y: 50 }}
-      animate={{ opacity: 1, y: 0 }}
+      className={`music-player ${isPlaying ? "playing" : ""}`}
+      initial={{ opacity: 0, scale: 0.8 }}
+      animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.5 }}
+      drag
+      dragConstraints={{ left: -100, right: 100, top: -100, bottom: 100 }}
+      whileDrag={{ scale: 1.1 }}
     >
-      <audio ref={audioRef} src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" autoPlay />
-
+      <audio
+        ref={audioRef}
+        src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+        autoPlay
+      />
       <motion.button
-        onClick={togglePlayPause}
         className="play-btn"
-        whileTap={{ scale: 0.8 }}
+        whileTap={{ scale: 0.9 }}
+        onClick={togglePlayPause}
       >
-        {isPlaying ? <FaPause /> : <FaPlay />}
+        <i className={isPlaying ? "fas fa-pause" : "fas fa-play"}></i>
       </motion.button>
-
-      <div className="track-info">
-        <span className="track-title">Now Playing: SoundHelix Track</span>
-        <div className="progress-bar">
-          <motion.div
-            className="progress"
-            style={{ width: `${progress}%` }}
-            animate={{ width: `${progress}%` }}
-            transition={{ duration: 0.2 }}
-          />
-        </div>
-      </div>
     </motion.div>
   );
 };
