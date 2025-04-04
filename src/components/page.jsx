@@ -115,19 +115,91 @@ export default function Page() {
         <div className="underline"></div>
         <div className="projects-container">
           {[
-              { title: 'Sco-img-ai', link: 'https://sco-img-ai.vercel.app', description: 'A I image generator with various options and sleek responsiveness .', icons: ['fa-brands fa-react', 'fa-brands fa-css3-alt', 'fa-solid fa-plug'] },
-                   { title: 'Urlite', link: 'https://urlite.vercel.app', description: 'A Url Shorter Website with sleek structures and highly responsive page, creates free and unlimited short urls.', icons: ['fa-brands fa-html5', 'fa-brands fa-css3-alt', 'fa-brands fa-react', 'fa-solid fa-plug'] },
-            { title: 'AP-EDU', link: 'https://apedu.rf.gd', description: 'A modern and high qualified school management system with exams, assignments, cbts and personal Tutorlage with students.', icons: ['fa-brands fa-php', 'fa-brands fa-css3-alt', 'fa-brands fa-js', 'fa-brands fa-php', 'fa-solid fa-cloud'] },
-    { title: 'Shepherd College', link: 'https://shepherdhub.netlify.app', description: 'An educational platform for learning and has more features for student ease of use.', icons: ['fa-brands fa-html5', 'fa-brands fa-css3-alt', 'fa-brands fa-js'] },
-            { title: 'AP-AI', link: 'https://ap-ai.vercel.app/', description: 'A modern and feature-rich platform designed for seamless AI-powered interactions, offering smart automation and intelligent responses for businesses and individuals.', icons: ['fa-brands fa-vuejs', 'fa-brands fa-css3-alt', 'fa-brands fa-js', 'fa-brands fa-php', 'fa-solid fa-cloud'] },
-         { title: 'Restaurant Site', link: 'https://sausyfoods.vercel.app', description: 'A sleek and user-friendly restaurant website that highlights the menu, reservations, online orders, and customer reviews, ensuring a delightful dining experience.', icons: ['fa-brands fa-html5', 'fa-brands fa-css3-alt', 'fa-brands fa-js'] },
-               { title: 'Apgrico', link: '', description: 'A smart Agriculture landing page website for marketing and sales of products.', icons: ['fa-brands fa-react', 'fa-brands fa-js', 'fa-solid fa-cloud'] },
-      { title: 'Tower Game', link: 'https://towerofbabelgame.vercel.app/', description: 'A captivating and immersive Game showcasing the legendary Tower of Hangbel, featuring its history, lore, and stunning visual elements.', icons: ['fa-solid fa-gamepad', 'fa-brands fa-vuejs', 'fa-brands fa-css3-alt', 'fa-brands fa-js', 'fa-solid fa-cloud'] },
-            { title: 'Football Livescore Site', link: 'https://apsports.vercel.app', description: 'Live football scores, match updates, and news.', icons: ['fa-brands fa-php', 'fa-solid fa-plug', 'fa-brands fa-js'] },
-            { title: 'APGame Zone', link: '', description: 'A platform for interactive online games.', icons: ['fa-brands fa-react', 'fa-brands fa-js', 'fa-solid fa-gamepad'] },
-            { title: 'Weather App', link: 'https://apweatherapp.vercel.app/', description: 'Real-time forecasts with location tracking and customizable themes.', icons: ['fa-brands fa-vuejs', 'fa-brands fa-css3-alt', 'fa-brands fa-js', 'fa-solid fa-cloud'] },
-            { title: 'APCal App', link: 'https://apcal.vercel.app', description: 'A smart calendar app for organizing tasks and events.', icons: ['fa-brands fa-react', 'fa-brands fa-js', 'fa-solid fa-calendar'] },
-          ].map((project, index) => (
+  {
+    title: 'APX Shopping Site',
+    link: 'https://apx.preciousadedokun.com.ng',
+    description: 'An advanced shopping platform with AI image generation, sleek UI, payment modules, and admin dashboard integration.',
+    icons: ['fa-brands fa-react', 'fa-brands fa-css3-alt', 'fa-solid fa-plug', 'fa-brands fa-php', 'fa-solid fa-database', 'fa-brands fa-vuejs', 'fa-brands fa-angular', 'fa-brands fa-bootstrap']
+  },
+  {
+    title: 'Urlite',
+    link: 'https://urlite.vercel.app',
+    description: 'A Url Shorter Website with sleek structures and highly responsive page, creates free and unlimited short urls.',
+    icons: ['fa-brands fa-html5', 'fa-brands fa-css3-alt', 'fa-brands fa-react', 'fa-solid fa-plug']
+  },
+  {
+    title: 'Sco-img-ai',
+    link: 'https://sco-img-ai.vercel.app',
+    description: 'An AI image generator with various options and sleek responsiveness.',
+    icons: ['fa-brands fa-react', 'fa-brands fa-css3-alt', 'fa-solid fa-plug']
+  },
+  {
+    title: 'AP-AI',
+    link: 'https://ap-ai.vercel.app/',
+    description: 'A modern and feature-rich platform designed for seamless AI-powered interactions, offering smart automation and intelligent responses for businesses and individuals.',
+    icons: ['fa-brands fa-vuejs', 'fa-brands fa-css3-alt', 'fa-brands fa-js', 'fa-brands fa-php', 'fa-solid fa-cloud']
+  },
+  {
+    title: 'Sco Drawing App',
+    link: 'https://sco-drawing.preciousadedokun.com.ng',
+    description: 'An AI-powered drawing board app with sleek tools and responsive design.',
+    icons: ['fa-brands fa-react', 'fa-brands fa-css3-alt', 'fa-solid fa-plug']
+  },
+  {
+    title: 'AP-EDU',
+    link: 'https://apedu.rf.gd',
+    description: 'A modern and high qualified school management system with exams, assignments, CBTS, and personal Tutorlage with students.',
+    icons: ['fa-brands fa-php', 'fa-brands fa-css3-alt', 'fa-brands fa-js', 'fa-solid fa-cloud']
+  },
+  {
+    title: 'Football Livescore Site',
+    link: 'https://apsports.vercel.app',
+    description: 'Live football scores, match updates, and news.',
+    icons: ['fa-brands fa-php', 'fa-solid fa-plug', 'fa-brands fa-js']
+  },
+  {
+    title: 'Weather App',
+    link: 'https://apweatherapp.vercel.app/',
+    description: 'Real-time forecasts with location tracking and customizable themes.',
+    icons: ['fa-brands fa-vuejs', 'fa-brands fa-css3-alt', 'fa-brands fa-js', 'fa-solid fa-cloud']
+  },
+  {
+    title: 'Tower Game',
+    link: 'https://towerofbabelgame.vercel.app/',
+    description: 'A captivating and immersive game showcasing the legendary Tower of Hangbel with stunning visuals.',
+    icons: ['fa-solid fa-gamepad', 'fa-brands fa-vuejs', 'fa-brands fa-css3-alt', 'fa-brands fa-js', 'fa-solid fa-cloud']
+  },
+  {
+    title: 'Restaurant Site',
+    link: 'https://sausyfoods.vercel.app',
+    description: 'A sleek and user-friendly restaurant website with menu, reservations, and customer reviews.',
+    icons: ['fa-brands fa-html5', 'fa-brands fa-css3-alt', 'fa-brands fa-js']
+  },
+  {
+    title: 'APCal App',
+    link: 'https://apcal.vercel.app',
+    description: 'A smart calendar app for organizing tasks and events.',
+    icons: ['fa-brands fa-react', 'fa-brands fa-js', 'fa-solid fa-calendar']
+  },
+  {
+    title: 'APGame Zone',
+    link: '',
+    description: 'A platform for interactive online games.',
+    icons: ['fa-brands fa-react', 'fa-brands fa-js', 'fa-solid fa-gamepad']
+  },
+  {
+    title: 'Shepherd College',
+    link: 'https://shepherdhub.netlify.app',
+    description: 'An educational platform for learning and has more features for student ease of use.',
+    icons: ['fa-brands fa-html5', 'fa-brands fa-css3-alt', 'fa-brands fa-js']
+  },
+  {
+    title: 'Apgrico',
+    link: '',
+    description: 'A smart agriculture landing page website for marketing and sales of products.',
+    icons: ['fa-brands fa-react', 'fa-brands fa-js', 'fa-solid fa-cloud']
+  }
+].map((project, index) => (
             <ScrollAnimation key={index} delay={index * 0.2}>
               <div className="project-card">
                 <div className="project-header">
