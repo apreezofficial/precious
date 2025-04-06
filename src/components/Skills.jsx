@@ -3,26 +3,16 @@ import "./Skills.css";
 
 const Skills = () => {
   const skills = [
-    "JavaScript",
-    "Python",
-    "Java",
-    "C++",
-    "TypeScript",
-    "Go",
-    "Rust",
     "HTML",
     "CSS",
-    "Vue",
-    "Angular",
-    "Node.js",
-    "Django",
-    "React",
-    "Three.js",
-    "Figma",
-    "Adobe XD",
-    "Framer",
-    "MySQL",
-    "Firebase",
+    "TAILWIND",
+    "JAVASCRIPT",
+    "REACT",
+    "TYPESCRIPT",
+    "PHP",
+    "MYSQL",
+    "SUPABASE",
+    "FIREBASE"
   ];
 
   const skillRefs = useRef([]);
