@@ -119,13 +119,18 @@ export default function Page() {
     title: 'APX Shopping Site',
     link: 'https://apx.preciousadedokun.com.ng',
     description: 'An advanced shopping platform with AI image generation, sleek UI, payment modules, and admin dashboard integration.',
-    icons: ['fa-brands fa-react', 'fa-brands fa-css3-alt', 'fa-solid fa-plug', 'fa-brands fa-php', 'fa-solid fa-database', 'fa-brands fa-vuejs', 'fa-brands fa-angular', 'fa-brands fa-bootstrap']
+    icons: ['fa-brands fa-php', 'fa-brands fa-css3-alt', 'fa-solid fa-plug', 'fa-brands fa-react', 'fa-solid fa-database', 'fa-brands fa-vuejs', 'fa-brands fa-bootstrap']
   },
   {
     title: 'Urlite',
     link: 'https://urlite.vercel.app',
     description: 'A Url Shorter Website with sleek structures and highly responsive page, creates free and unlimited short urls.',
     icons: ['fa-brands fa-html5', 'fa-brands fa-css3-alt', 'fa-brands fa-react', 'fa-solid fa-plug']
+  },{
+    title: 'APX Blog Site',
+    link: 'https://blog.preciousadedokun.com.ng',
+    description: 'An advanced Blogging platform with  quality responsiveness and high resolution on all devices .',
+    icons: ['fa-brands fa-php', 'fa-brands fa-css3-alt', 'fa-solid fa-plug', 'fa-brands fa-vue', 'fa-solid fa-database']
   },
   {
     title: 'Sco-img-ai',
@@ -140,22 +145,28 @@ export default function Page() {
     icons: ['fa-brands fa-vuejs', 'fa-brands fa-css3-alt', 'fa-brands fa-js', 'fa-brands fa-php', 'fa-solid fa-cloud']
   },
   {
+    title: 'Shepherd College',
+    link: 'https://shepherdhub.netlify.app',
+    description: 'An educational platform for learning and has more features for student ease of use.',
+    icons: ['fa-brands fa-html5', 'fa-brands fa-css3-alt', 'fa-brands fa-js']
+  },
+  {
     title: 'Sco Drawing App',
     link: 'https://sco-drawing.preciousadedokun.com.ng',
     description: 'An AI-powered drawing board app with sleek tools and responsive design.',
     icons: ['fa-brands fa-react', 'fa-brands fa-css3-alt', 'fa-solid fa-plug']
   },
   {
-    title: 'AP-EDU',
-    link: 'https://apedu.rf.gd',
-    description: 'A modern and high qualified school management system with exams, assignments, CBTS, and personal Tutorlage with students.',
-    icons: ['fa-brands fa-php', 'fa-brands fa-css3-alt', 'fa-brands fa-js', 'fa-solid fa-cloud']
-  },
-  {
     title: 'Football Livescore Site',
     link: 'https://apsports.vercel.app',
     description: 'Live football scores, match updates, and news.',
     icons: ['fa-brands fa-php', 'fa-solid fa-plug', 'fa-brands fa-js']
+  },
+  {
+    title: 'AP-EDU',
+    link: 'https://apedu.rf.gd',
+    description: 'A modern and high qualified school management system with exams, assignments, CBTS, and personal Tutorlage with students.',
+    icons: ['fa-brands fa-php', 'fa-brands fa-css3-alt', 'fa-brands fa-js', 'fa-solid fa-cloud']
   },
   {
     title: 'Weather App',
@@ -186,12 +197,6 @@ export default function Page() {
     link: '',
     description: 'A platform for interactive online games.',
     icons: ['fa-brands fa-react', 'fa-brands fa-js', 'fa-solid fa-gamepad']
-  },
-  {
-    title: 'Shepherd College',
-    link: 'https://shepherdhub.netlify.app',
-    description: 'An educational platform for learning and has more features for student ease of use.',
-    icons: ['fa-brands fa-html5', 'fa-brands fa-css3-alt', 'fa-brands fa-js']
   },
   {
     title: 'Apgrico',
