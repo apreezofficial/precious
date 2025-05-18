@@ -187,7 +187,7 @@ export default function Page() {
     icons: ['fa-brands fa-html5', 'fa-brands fa-css3-alt', 'fa-brands fa-js']
   },
   {
-    title: 'APCal App',
+     title: 'APCal App',
     link: 'https://apcal.vercel.app',
     description: 'A smart calendar app for organizing tasks and events.',
     icons: ['fa-brands fa-react', 'fa-brands fa-js', 'fa-solid fa-calendar']
