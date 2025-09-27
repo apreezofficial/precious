@@ -29,7 +29,7 @@ const ContactForm = () => {
 
     setLoading(true);
     try {
-      const response = await fetch("https://getform.io/f/bdrnqdnb", {
+      const response = await fetch("https://app.proforms.top/f/pr001", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
