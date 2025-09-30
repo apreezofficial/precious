@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'; // Framer Motion for animations
 import './style.css';
 import Globe from './globe';
 import Testimonials from './testimonials';
-import Mymg from './logoo.jpg';
+import Mymg from './latest_ap.webp';
 import ContactForm from './ContactForm';
 import Journey from './journey';
 import Footer from './footer';
@@ -88,13 +88,10 @@ export default function Page() {
         </p>
         <div className="services-container">
           {[
+            { icon: 'fas fa-search', title: 'Search Optimization', description: 'Enhancing website SEO for better rankings and visibility.' },
             { icon: 'fas fa-laptop-code', title: 'Frontend Web Development', description: 'I create modern, interactive, and responsive web applications.' },
             { icon: 'fas fa-server', title: 'Backend Development', description: 'I develop secure, scalable server-side applications and APIs.' },
-            { icon: 'fas fa-gamepad', title: 'Game Development', description: 'I build engaging games with real-time interaction and smooth performance.' },
             { icon: 'fas fa-database', title: 'Database Management', description: 'I optimize databases for security, efficiency, and scalability.' },
-            { icon: 'fas fa-mobile-alt', title: 'App Development', description: 'Building cross-platform mobile and web applications with high performance.' },
-            { icon: 'fas fa-robot', title: 'Automation Engineering', description: 'I develop automation systems for workflow optimization and efficiency.' },
-            { icon: 'fas fa-search', title: 'Search Optimization', description: 'Enhancing website SEO for better rankings and visibility.' },
             { icon: 'fas fa-palette', title: 'UI/UX Design', description: 'Designing intuitive, accessible, and user-friendly interfaces.' },
             { icon: 'fas fa-tools', title: 'Web Maintenance', description: 'Ensuring optimal performance, security, and updates for websites.' },
           ].map((service, index) => (
