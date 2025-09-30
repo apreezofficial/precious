@@ -48,7 +48,7 @@ export default function Page() {
             <span>Innovative</span> Code Developer
           </h1>
           <p>
-            I'm Precious Adedokun, alias APCodeSphere, a Full Stack and Blockchain Developer with years of experience, with over 6 years of experience varingrom robotics to web development to App Development and to Blockchain .
+            I'm Precious Adedokun, alias APCodeSphere, a Full Stack Developer and SEO Expert, clinged to building beautiful, functional and scalable web applications.
           </p>
           <p>I build reliable and scalable solutions with smooth user interactions.</p>
           <p>An upcoming tech content creator and speaker.</p>
