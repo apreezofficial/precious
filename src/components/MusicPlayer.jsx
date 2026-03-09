@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
-import song from "../assets/Ogayoloo-by-Dr-Paul-Enenche.mp3"; // Import the MP3 file
+import song from "../assets/Rema-Boulevard.mp3"; // Import the MP3 file
 import "./MusicPlayer.css";
 
 const MusicPlayer = () => {
